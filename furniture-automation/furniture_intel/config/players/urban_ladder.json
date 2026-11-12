@@ -1,0 +1,4 @@
+{
+  "_comment": "Urban Ladder: returned GMV = shipped GMV x returns % (the sheet's formula).",
+  "returns_base": "shipped"
+}

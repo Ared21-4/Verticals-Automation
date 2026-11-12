@@ -1,0 +1,36 @@
+{
+  "_comment": "The Revised Babycare sheet repeats the five category labels in four blocks (shipped GMV, units, ASP, GMV %). 'sections' name a block by the prefix of the row that opens it (first match wins, so 'shr' is listed before 'gmv'); a rule 'section::label' applies only inside that block. Kids Fashion carries 293 (GMV) and 3140 (ASP) in the sheet; the webform reports it as 457/1551 (GMV) and 473/514 (ASP), which the babycare step fills.",
+  "sections": {
+    "shr": "category shipped gmv %",
+    "gmv": "category shipped gmv",
+    "units": "category shipped units",
+    "asp": "category asp",
+    "pay": "payment method",
+    "ship": "shipment split",
+    "geo": "gross gmv split by city tier (%)",
+    "geoabs": "gross gmv split by city tier",
+    "wf": "babycare gross transactions"
+  },
+  "rows": {
+    "gmv::kids fashion": 293,
+    "gmv::diaper & nappies": 294,
+    "gmv::baby care supplies": 295,
+    "gmv::baby gear": 296,
+    "gmv::others": 7701,
+    "units::kids fashion": 7721,
+    "units::diaper & nappies": 7722,
+    "units::baby care supplies": 7723,
+    "units::baby gear": 7724,
+    "units::others": 7725,
+    "asp::kids fashion": 3140,
+    "asp::diaper & nappies": 515,
+    "asp::baby care supplies": 516,
+    "asp::baby gear": 522,
+    "asp::others": 523,
+    "shr::kids fashion": 7711,
+    "shr::diaper & nappies": 7712,
+    "shr::baby care supplies": 7713,
+    "shr::baby gear": 7714,
+    "shr::others": 7715
+  }
+}

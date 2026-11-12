@@ -1,0 +1,385 @@
+{
+  "profile": "furniture",
+  "_comment": "Shared profile for the furniture players (Pepperfry, Urban Ladder). Metrics are addressed by par_id. The two player sheets disagree on where some par_ids sit, so forced_pars.json fixes those rows and label_pars.json binds rows that carry none. A player config overrides only what differs; a metric the player's sheet does not carry is reported as unavailable rather than invented.",
+  "currency": "INR",
+  "gmv_unit": "INR Cr",
+  "reference": {
+    "par_id_col": 1,
+    "name_col": 2,
+    "unit_col": 3,
+    "first_month_col": 4,
+    "header_row": 5,
+    "first_data_row": 6,
+    "output_template_file": "furniture_template.json",
+    "output_sheet_name": "Furniture-WF"
+  },
+  "metrics": {
+    "_comment": "metric name -> par_id. Resolved against the player's own sheet at load.",
+    "gross_gmv": 241,
+    "cancellation_pct": 242,
+    "shipped_gmv": 243,
+    "returns_pct": 7301,
+    "rto_pct": 245,
+    "rvp_pct": 246,
+    "net_gmv": 247,
+    "aov": 240,
+    "gross_transactions": 4257,
+    "asp": 468,
+    "mtu": 238,
+    "frequency": 2769,
+    "basket_size": 519,
+    "cod_pct": 286,
+    "prepaid_pct": 287,
+    "metro_pct": 476,
+    "tier1_pct": 477,
+    "tier2plus_pct": 478,
+    "mau": 52,
+    "mac": 2762,
+    "captive_pct": 221,
+    "tpl_pct": 222,
+    "captive_gmv": 3445,
+    "tpl_gmv": 3446,
+    "unique_visitors": 2758,
+    "sessions": 161,
+    "web_share": 162,
+    "app_share": 163,
+    "registered_users": 2587,
+    "avg_shipment_value": 3548,
+    "app_mau": 2588,
+    "app_dau": 2589,
+    "web_mau": 2590,
+    "web_dau": 2591,
+    "app_sessions": 2592,
+    "app_sessions_per_day": 2593,
+    "app_time_per_session": 2594,
+    "web_sessions": 2595,
+    "web_sessions_per_day": 2596,
+    "web_time_per_session": 2597,
+    "txn_app_pct": 2599,
+    "txn_new_pct": 2601,
+    "paid_pct": 2605,
+    "organic_pct": 2606,
+    "cac": 2607,
+    "m1_retention": 2608,
+    "m3_retention": 2609,
+    "returned_gmv": 244
+  },
+  "gmv_anchor": "auto",
+  "_gmv_anchor_comment": "Furniture sheets store gross GMV and derive shipped from cancellation, so gross anchors.",
+  "mis_sections": {
+    "overall": "Overall",
+    "category_gmv": "Category GMV",
+    "category_asp": "Category ASP",
+    "payment": "Payment Split",
+    "geography": "Geographic Split"
+  },
+  "mis_metric_names": {
+    "gross_gmv": "Gross GMV at SP",
+    "returns": "Returns",
+    "aov": "AOV at SP",
+    "shipped_gmv": "Shipped GMV",
+    "mtu": "Monthly Transacting Users",
+    "orders": "Monthly Orders",
+    "cod": "COD (%)",
+    "prepaid": "Prepaid (%)",
+    "metro": "Metro",
+    "tier1": "Tier 1",
+    "tier2plus": "Tier 2+"
+  },
+  "mis_definition_conflicts": {
+    "_comment": "Unit-definition mismatches between a MIS and the model. Surfaced on every run; never silently applied.",
+    "AOV at SP": {
+      "model_metric": "aov",
+      "note": "Check whether the MIS AOV is order-level or shipment-level before using it."
+    },
+    "Monthly Orders": {
+      "model_metric": "gross_transactions",
+      "note": "Check whether MIS orders are order-level or shipment-level."
+    },
+    "Monthly Transacting Users": {
+      "model_metric": "mtu",
+      "note": "Check whether MIS users are transacting users or a reached base."
+    }
+  },
+  "plausibility_bounds": {
+    "cancellation_pct": {
+      "max_abs_mom_delta": 0.04
+    },
+    "returns_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "metro_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "tier1_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "tier2plus_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "basket_size": {
+      "max_abs_mom_delta": 0.3
+    },
+    "shipped_gmv": {
+      "max_abs_mom_pct": 0.6
+    },
+    "gross_gmv": {
+      "max_abs_mom_pct": 0.6
+    }
+  },
+  "output_layout": {
+    "nulls_last": false,
+    "sections": [
+      {
+        "name": "Upload sheet",
+        "match": [
+          "^(?!Additional)"
+        ]
+      },
+      {
+        "name": "Additional metrics",
+        "match": [
+          "^Additional"
+        ]
+      }
+    ]
+  },
+  "extra_parameters": {
+    "_comment": "Everything the model computes is already in the furniture template.",
+    "rows": []
+  },
+  "split_groups": {
+    "_comment": "Percentage splits that must sum to the prior month's total. Estimated member by member, then rescaled together.",
+    "groups": [
+      [
+        223,
+        224,
+        225,
+        226
+      ],
+      [
+        446,
+        7601
+      ],
+      [
+        476,
+        477,
+        478
+      ]
+    ]
+  },
+  "mis_generic": {
+    "_comment": "The generic MIS template (Overall, Category GMV, Category ASP, Payment Split, Geographic Split). Labels are matched case-insensitively. Category lines are matched to the five furniture categories below.",
+    "zero_means_missing": true,
+    "gmv_scale": "auto",
+    "scale_candidates": [
+      1,
+      10000000
+    ],
+    "overall": {
+      "gross_gmv": [
+        "Gross GMV at SP",
+        "Gross GMV"
+      ],
+      "shipped_gmv": [
+        "Shipped GMV"
+      ],
+      "cancellation_pct": [
+        "Cancellations (%)",
+        "Cancellation (%)",
+        "Cancellation"
+      ],
+      "rto_pct": [
+        "RTO (%)",
+        "RTO"
+      ],
+      "rvp_pct": [
+        "RVP (%)",
+        "RVP"
+      ],
+      "aov": [
+        "AOV at SP",
+        "AOV"
+      ],
+      "asp": [
+        "Platform ASP",
+        "ASP"
+      ],
+      "mau": [
+        "Monthly Active Users"
+      ],
+      "mtu": [
+        "Monthly Transacting Users"
+      ],
+      "orders": [
+        "Monthly Orders"
+      ],
+      "conversion": [
+        "Conversion %"
+      ]
+    },
+    "categories": {
+      "home furnishings": {
+        "gmv": 7101,
+        "asp": 498,
+        "share": 1426
+      },
+      "home furnishing": {
+        "gmv": 7101,
+        "asp": 498,
+        "share": 1426
+      },
+      "furnishings": {
+        "gmv": 7101,
+        "asp": 498,
+        "share": 1426
+      },
+      "furniture": {
+        "gmv": 7102,
+        "asp": 499,
+        "share": 1427
+      },
+      "home decor": {
+        "gmv": 7103,
+        "asp": 500,
+        "share": 1428
+      },
+      "home décor": {
+        "gmv": 7103,
+        "asp": 500,
+        "share": 1428
+      },
+      "decor": {
+        "gmv": 7103,
+        "asp": 500,
+        "share": 1428
+      },
+      "home improvement tools": {
+        "gmv": 7104,
+        "asp": 502,
+        "share": 1429
+      },
+      "home improvement": {
+        "gmv": 7104,
+        "asp": 502,
+        "share": 1429
+      },
+      "tools": {
+        "gmv": 7104,
+        "asp": 502,
+        "share": 1429
+      },
+      "household": {
+        "gmv": 7105,
+        "asp": 503,
+        "share": 1430
+      },
+      "household items": {
+        "gmv": 7105,
+        "asp": 503,
+        "share": 1430
+      }
+    },
+    "price_buckets": {},
+    "unsplit_buckets": {},
+    "aov_tolerance": [
+      0.65,
+      1.35
+    ],
+    "_scale_note": "Auto-detection only chooses between crore (1) and rupees (10,000,000). Lakh and million are deliberately not guessed: a different player's crore figure divided by 10 looks like a plausible number and let a wrong file pass. If a player really sends lakh or million, set gmv_scale explicitly in its config (100 or 10)."
+  },
+  "corroboration": [
+    {
+      "name": "Platform GMV against the expert's stated figure",
+      "method": "stated_vs_platform",
+      "label": "Platform GMV",
+      "platform_metric": "gross_gmv"
+    }
+  ],
+  "history_balance": {
+    "_comment": "The stored history is used to keep MoM and YoY from being far off each other. The reported level is moved toward the level whose growth, on stored history, best matches the MIS's stated MoM and YoY. weight 1 = fully balanced, 0 = the MIS figure unchanged. The reported figure is always kept beside the output.",
+    "enabled": true,
+    "weight": 1.0,
+    "max_adjustment": 0.15,
+    "max_gap_for_trust": 0.2,
+    "min_weight": 0.25,
+    "applies_to": [
+      "gross_gmv"
+    ]
+  },
+  "category_tree": {
+    "_comment": "Category shipped GMV = category share x platform shipped GMV, as the reference sheets compute it. Items = GMV x 10^7 / ASP.",
+    "leaves": [
+      {
+        "gmv": 7101,
+        "asp": 498,
+        "share": 1426,
+        "items": 7111,
+        "items_share": 7121,
+        "label": "Home furnishings"
+      },
+      {
+        "gmv": 7102,
+        "asp": 499,
+        "share": 1427,
+        "items": 7112,
+        "items_share": 7122,
+        "label": "Furniture"
+      },
+      {
+        "gmv": 7103,
+        "asp": 500,
+        "share": 1428,
+        "items": 7113,
+        "items_share": 7123,
+        "label": "Home Décor"
+      },
+      {
+        "gmv": 7104,
+        "asp": 502,
+        "share": 1429,
+        "items": 7114,
+        "items_share": 7124,
+        "label": "Home improvement tools"
+      },
+      {
+        "gmv": 7105,
+        "asp": 503,
+        "share": 1430,
+        "items": 7115,
+        "items_share": 7125,
+        "label": "Household"
+      }
+    ],
+    "other_shares": [],
+    "rollups": {},
+    "min_coverage_for_platform_asp": 0.6
+  },
+  "mirrors": {
+    "_comment": "None for furniture."
+  },
+  "returns_direct": true,
+  "_returns_comment": "Returns % is the sheet's own 'Returns(RTO+RVP)' row, estimated directly: Urban Ladder's RTO and RVP rows are on a different base and do not sum to it. returns_base says what returned GMV is a share of: 'gross' (Pepperfry) or 'shipped' (Urban Ladder).",
+  "returns_base": "gross",
+  "furniture": {
+    "orders_per_day": 7401,
+    "items_total": 7110,
+    "metro_incl_tier1": 7501,
+    "mtu_from_transactions": true
+  },
+  "max_history_age_months": 6,
+  "aov_from_asp_basket": false,
+  "output_pct_scale": 1,
+  "_output_pct_scale_comment": "1 writes percentages as fractions (0.762) formatted as %, like the Furniture Output sheet; 100 writes 76.2.",
+  "mis_level_bounds": {
+    "_comment": "A MIS whose platform GMV is outside 'stop' times last month's stops the run; outside 'warn' it warns. Furniture has two players, one about twice the other, and neither moves more than a quarter in a month, so the bounds are tight enough to catch the other player's MIS.",
+    "stop": [
+      0.6,
+      1.6
+    ],
+    "warn": [
+      0.8,
+      1.25
+    ]
+  }
+}

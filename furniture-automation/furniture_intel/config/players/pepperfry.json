@@ -1,0 +1,16 @@
+{
+  "_comment": "Pepperfry: returned GMV = gross GMV x returns % (the sheet's formula).",
+  "returns_base": "gross",
+  "channel_distribution": {
+    "_comment": "Pepperfry sells through studios as well as online; the 'Pepperfry Channel Distribution' sheet splits GMV by channel and category. Urban Ladder is online only and has no such sheet.",
+    "sheet": "Pepperfry Channel Distribution",
+    "shipped_par": 243,
+    "share_pars": [
+      1426,
+      1427,
+      1428,
+      1429,
+      1430
+    ]
+  }
+}

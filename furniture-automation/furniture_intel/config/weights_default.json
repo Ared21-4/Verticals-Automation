@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "scope": "global",
+  "_comment": "Configured weights express the relative importance of each evidence source. They are NOT the coefficients of a GMV formula. The estimation engine consults them only where a parameter has competing evidence; parameters under an mis_anchor policy are reported actuals and are not re-weighted.",
+  "weights": {
+    "expert_call": {
+      "weight": 0.35,
+      "label": "Expert call transcript and extracted insights"
+    },
+    "player_mis": {
+      "weight": 0.35,
+      "label": "Player MIS Excel"
+    },
+    "logistics": {
+      "weight": 0.1,
+      "label": "Logistics and shipped-volume data"
+    },
+    "traffic": {
+      "weight": 0.08,
+      "label": "Traffic data"
+    },
+    "seasonality": {
+      "weight": 0.05,
+      "label": "Calendar and seasonality"
+    },
+    "market_events": {
+      "weight": 0.04,
+      "label": "Platform sale events and market correlations"
+    },
+    "social": {
+      "weight": 0.03,
+      "label": "Social media data"
+    },
+    "brand_level": {
+      "weight": 0.0,
+      "label": "Brand-level data"
+    },
+    "secondary": {
+      "weight": 0.0,
+      "label": "Secondary data (news on the brands)"
+    }
+  },
+  "quality_rules": {
+    "_comment": "A source being present does not make it trustworthy. Each rule multiplies that source's weight before renormalisation.",
+    "stale_months": {
+      "after_months": 2,
+      "multiplier": 0.5
+    },
+    "partial_coverage": {
+      "below_pct": 0.6,
+      "multiplier": 0.7
+    },
+    "internally_inconsistent": {
+      "multiplier": 0.4
+    },
+    "low_transcription_confidence": {
+      "multiplier": 0.6
+    }
+  },
+  "confidence_thresholds": {
+    "_comment": "Confidence band for the run, from the total configured weight that was actually available.",
+    "high": 0.75,
+    "medium": 0.5
+  }
+}

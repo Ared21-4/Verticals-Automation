@@ -1,0 +1,123 @@
+{
+  "_comment": "The players this system covers. 'sheet' is the tab in the reference workbook that holds the player's history. Add a line here to add a player.",
+  "players": [
+    {
+      "name": "Myntra",
+      "sheet": "Myntra_AJ",
+      "aliases": [
+        "myntra"
+      ]
+    },
+    {
+      "name": "Ajio",
+      "sheet": "AJIO",
+      "aliases": [
+        "ajio"
+      ]
+    },
+    {
+      "name": "Zivame",
+      "sheet": "Zivame Revised",
+      "aliases": [
+        "zivame",
+        "zivamae"
+      ]
+    },
+    {
+      "name": "H&M",
+      "sheet": "H&M",
+      "aliases": [
+        "h&m",
+        "h & m",
+        "h and m"
+      ]
+    },
+    {
+      "name": "M&S",
+      "sheet": "Marks & Spencer",
+      "aliases": [
+        "m&s",
+        "m & s",
+        "marks"
+      ]
+    },
+    {
+      "name": "Clovia",
+      "sheet": "Clovia",
+      "aliases": [
+        "clovia"
+      ]
+    },
+    {
+      "name": "Bewakoof",
+      "sheet": "Bewakoof.com",
+      "aliases": [
+        "bewakoof"
+      ]
+    },
+    {
+      "name": "Limeroad",
+      "sheet": "Limeroad revised",
+      "aliases": [
+        "limeroad",
+        "lime road"
+      ]
+    },
+    {
+      "name": "Nykaa Fashion",
+      "sheet": "Nykaa Fashion",
+      "aliases": [
+        "nykaa fashion",
+        "nykaa"
+      ]
+    },
+    {
+      "name": "Shoppers Stop",
+      "sheet": "Shoppers Stop",
+      "aliases": [
+        "shoppers stop",
+        "shopperstop",
+        "shoppers"
+      ]
+    },
+    {
+      "name": "Zara",
+      "sheet": "Zara",
+      "aliases": [
+        "zara"
+      ]
+    },
+    {
+      "name": "Snapdeal",
+      "sheet": "SNAPDEAL",
+      "aliases": [
+        "snapdeal",
+        "snap deal"
+      ]
+    },
+    {
+      "name": "Tata CLiQ",
+      "sheet": "Tatacliq",
+      "aliases": [
+        "tata cliq",
+        "tata clique",
+        "tatacliq",
+        "tata-cliq"
+      ]
+    }
+  ],
+  "templates": [
+    "Myntra-WF",
+    "Fashion_WF"
+  ],
+  "batch_default": [
+    "Bewakoof",
+    "H&M",
+    "Limeroad",
+    "Clovia",
+    "M&S",
+    "Shoppers Stop",
+    "Zara",
+    "Zivame"
+  ]
+}

@@ -1,0 +1,1073 @@
+{
+"_comment": "The BPC upload sheet: 178 parameters, the same for every player. Taken from the delivered monthly sheets (e.g. Purplle_Aug_2026.csv). Rows: parent_question, parameter_name, par_id, unit.",
+"rows": [
+[
+"Monthly Sessions",
+"Monthly Sessions (Mn)",
+161,
+"Mn"
+],
+[
+"Monthly Sessions",
+"% Desktop + Mobile Web (%)",
+162,
+"%"
+],
+[
+"Monthly Sessions",
+"% App (%)",
+163,
+"%"
+],
+[
+"Payment Method - % Share of Transactions",
+"CoD(%)",
+286,
+"%"
+],
+[
+"Payment Method - % Share of Transactions",
+"Pre-Paid(%)",
+287,
+"%"
+],
+[
+"Shipment Split by 3PL and Captive",
+"% share of Captive(%)",
+221,
+"%"
+],
+[
+"Shipment Split by 3PL and Captive",
+"% share of 3PL(%)",
+222,
+"%"
+],
+[
+"GMV split by Zone",
+"East(%)",
+223,
+"%"
+],
+[
+"GMV split by Zone",
+"West(%)",
+224,
+"%"
+],
+[
+"GMV split by Zone",
+"North(%)",
+225,
+"%"
+],
+[
+"GMV split by Zone",
+"South(%)",
+226,
+"%"
+],
+[
+"% GMV split by City/Tier",
+"Metro(%)",
+476,
+"%"
+],
+[
+"% GMV split by City/Tier",
+"Tier-I(%)",
+477,
+"%"
+],
+[
+"% GMV split by City/Tier",
+"Tier2+(%)",
+478,
+"%"
+],
+[
+"Category - ASP",
+"Grooming (INR)",
+492,
+"INR"
+],
+[
+"Category - ASP",
+"Makeup & Fragrance (INR)",
+493,
+"INR"
+],
+[
+"Category - ASP",
+"Others(INR)",
+494,
+"INR"
+],
+[
+"Supply chain",
+"Total FCs (#)",
+214,
+"#"
+],
+[
+"AOV",
+"Average Order Value (at SP) (INR)",
+240,
+"INR"
+],
+[
+"Customer split by Zone",
+"East(%)",
+1409,
+"%"
+],
+[
+"Customer split by Zone",
+"West(%)",
+1410,
+"%"
+],
+[
+"Customer split by Zone",
+"North(%)",
+1411,
+"%"
+],
+[
+"Customer split by Zone",
+"South(%)",
+1412,
+"%"
+],
+[
+"GMV split by (Own + Marketplace)",
+"Private Label (%)",
+828,
+"%"
+],
+[
+"GMV split by (Own + Marketplace)",
+"Own (%)",
+1431,
+"%"
+],
+[
+"GMV split by (Own + Marketplace)",
+"Marketplace(%)",
+1579,
+"%"
+],
+[
+"Category - Shipped % GMV",
+"Grooming(%)",
+1580,
+"%"
+],
+[
+"Category - Shipped % GMV",
+"Makeup&Fragrance(%)",
+1581,
+"%"
+],
+[
+"Category - Shipped % GMV",
+"Others - others (L2) (%)",
+1583,
+"%"
+],
+[
+"GMV",
+"Gross Order Value (at SP) (INR Cr.)",
+241,
+"INR Cr"
+],
+[
+"GMV",
+"Cancelled GOV (at SP) (%)",
+242,
+"%"
+],
+[
+"GMV",
+"RTO(%)",
+245,
+"%"
+],
+[
+"GMV",
+"RVP(%)",
+246,
+"%"
+],
+[
+"GMV",
+"Total GMV (Pre Discount) - Reliance(INR Cr)",
+9416,
+"INR Cr"
+],
+[
+"GMV",
+"Take Rates - Reliance(%)",
+9418,
+"%"
+],
+[
+"Topline",
+"MAU (Mn)",
+52,
+"Mn"
+],
+[
+"Topline",
+"AAC (Mn)",
+1420,
+"Mn"
+],
+[
+"Topline",
+"Ratio of MTU / MAU(%)",
+2762,
+"%"
+],
+[
+"Topline",
+"Average Shipment Value",
+3548,
+"INR"
+],
+[
+"Other Topline Metrics",
+"Monthly Transacting Users (Mn)",
+238,
+"Mn"
+],
+[
+"Other Topline Metrics",
+"Total Registered users(Mn)",
+2587,
+"Mn"
+],
+[
+"Active Users - App",
+"MAU(Mn)",
+2588,
+"Mn"
+],
+[
+"Active Users - App",
+"DAU(Mn)",
+2589,
+"Mn"
+],
+[
+"Active Users - Web",
+"MAU(Mn)",
+2590,
+"Mn"
+],
+[
+"Active Users - Web",
+"DAU(Mn)",
+2591,
+"Mn"
+],
+[
+"Web sessions",
+"Total # Sessions(Mn)",
+2595,
+"Mn"
+],
+[
+"Web sessions",
+"Time spent per session(Mins)",
+2597,
+"Minute"
+],
+[
+"Transactions Funnel",
+"App(%)",
+2599,
+"%"
+],
+[
+"Transactions Funnel",
+"New(%)",
+2601,
+"%"
+],
+[
+"Transactions Funnel",
+"% Paid(%)",
+2605,
+"%"
+],
+[
+"Transactions Funnel",
+"CAC(INR)",
+2607,
+"INR"
+],
+[
+"Retention metrics",
+"M1(%)",
+2608,
+"%"
+],
+[
+"Retention metrics",
+"M3(%)",
+2609,
+"%"
+],
+[
+"Category - Gross Transactions",
+"BPC (Mn)",
+4257,
+"Mn"
+],
+[
+"Category - MTU",
+"Beauty & Personal Care (Mn)",
+3612,
+"Mn"
+],
+[
+"Category - Payment Method - Share of GMV",
+"Beauty & Personal Care - PrePaid(%)",
+4487,
+"%"
+],
+[
+"Category - Payment Method - Share of GMV",
+"Beauty & Personal Care - COD(%)",
+4499,
+"%"
+],
+[
+"Category - GMV Split By City/Tier",
+"Beauty & Personal Care - Metro(%)",
+4511,
+"%"
+],
+[
+"Category - GMV Split By City/Tier",
+"Beauty & Personal Care - Tier 1(%)",
+4523,
+"%"
+],
+[
+"Category - GMV Split By City/Tier",
+"Beauty & Personal Care - Tier 2+ (%)",
+4535,
+"%"
+],
+[
+"Category - Unit Economics",
+"Total Revenue (INR Cr)",
+4589,
+"INR Cr"
+],
+[
+"Category - Unit Economics",
+"E-commerce Revenue (INR Cr)",
+4590,
+"INR Cr"
+],
+[
+"Category - Unit Economics",
+"Ad Revenue (INR Cr)",
+4591,
+"INR Cr"
+],
+[
+"Category - Unit Economics",
+"Total Cost (INR Cr)",
+4600,
+"INR Cr"
+],
+[
+"Category - Unit Economics",
+"Discount & Customer Acquisition Cost (INR Cr)",
+4601,
+"INR Cr"
+],
+[
+"Category - Unit Economics",
+"Supply Chain & Fulfillment Cost (INR Cr)",
+4602,
+"INR Cr"
+],
+[
+"Category - Unit Economics",
+"Contribution Margin (INR Cr)",
+4603,
+"INR Cr"
+],
+[
+"Category - Unit Economics",
+"EBITDA(INR Cr)",
+4604,
+"INR Cr"
+],
+[
+"Category Shipped GMV - Home & Furniture",
+"Home furnishings (INR Cr)",
+425,
+"INR Cr"
+],
+[
+"Category Shipped GMV - Home & Furniture",
+"Furniture (INR Cr)",
+426,
+"INR Cr"
+],
+[
+"Category Shipped GMV - Home & Furniture",
+"Home Decor (INR Cr)",
+427,
+"INR Cr"
+],
+[
+"Category Shipped GMV - Home & Furniture",
+"Home improvement tools (INR Cr)",
+428,
+"INR Cr"
+],
+[
+"Category Shipped GMV - Home & Furniture",
+"Household (INR Cr)",
+429,
+"INR Cr"
+],
+[
+"Category Shipped GMV - Home & Furniture",
+"Home & Furniture (INR Cr)",
+458,
+"INR Cr"
+],
+[
+"Category ASP - Home & Furniture",
+"Home & Furniture (INR)",
+474,
+"INR"
+],
+[
+"Category ASP - Home & Furniture",
+"Home Furnishing",
+498,
+"INR"
+],
+[
+"Category ASP - Home & Furniture",
+"Furniture",
+499,
+"INR"
+],
+[
+"Category ASP - Home & Furniture",
+"Home Decor",
+500,
+"INR"
+],
+[
+"Category ASP - Home & Furniture",
+"Home improvement",
+502,
+"INR"
+],
+[
+"Category ASP - Home & Furniture",
+"Household",
+503,
+"INR"
+],
+[
+"Category Shipped GMV - Babycare",
+"Baby Care (INR Cr)",
+581,
+"INR Cr"
+],
+[
+"Category ASP - Babycare",
+"BabyCare (INR)",
+301,
+"INR"
+],
+[
+"Category Shipped GMV - Fashion",
+"Fashion(INR Cr)",
+457,
+"INR Cr"
+],
+[
+"Category Shipped GMV - Fashion",
+"Kids Fashion(INR Cr)",
+1551,
+"INR Cr"
+],
+[
+"Category ASP - Fashion",
+"Fashion (INR)",
+473,
+"INR"
+],
+[
+"Category ASP - Fashion",
+"Kids Fashion",
+514,
+"INR"
+],
+[
+"Category Gross Transaction Excluding BPC",
+"Fashion(Mn)",
+4254,
+"Mn"
+],
+[
+"Category Gross Transaction Excluding BPC",
+"Home & Furniture (Mn)",
+4255,
+"Mn"
+],
+[
+"Category Gross Transaction Excluding BPC",
+"Baby Care (Mn)",
+4258,
+"Mn"
+],
+[
+"Category - MTU Excluding BPC",
+"Baby Care(Mn)",
+3611,
+"Mn"
+],
+[
+"Category - MTU Excluding BPC",
+"Fashion (Mn)",
+3616,
+"Mn"
+],
+[
+"Category - MTU Excluding BPC",
+"Home & Furniture (Mn)",
+3617,
+"Mn"
+],
+[
+"Category - Cancelled GMV Excluding BPC",
+"Babycare(%)",
+4370,
+"%"
+],
+[
+"Category - Cancelled GMV Excluding BPC",
+"Fashion(%)",
+4374,
+"%"
+],
+[
+"Category - Cancelled GMV Excluding BPC",
+"Home & Furniture(%)",
+4376,
+"%"
+],
+[
+"Category Payment Method(Share of GMV) Excluding BPC",
+"Babycare- PrePaid(%)",
+4488,
+"%"
+],
+[
+"Category Payment Method(Share of GMV) Excluding BPC",
+"Fashion - PrePaid(%)",
+4491,
+"%"
+],
+[
+"Category Payment Method(Share of GMV) Excluding BPC",
+"Home & Furniture - PrePaid(%)",
+4493,
+"%"
+],
+[
+"Category Payment Method(Share of GMV) Excluding BPC",
+"Babycare - COD(%)",
+4500,
+"%"
+],
+[
+"Category Payment Method(Share of GMV) Excluding BPC",
+"Fashion - COD(%)",
+4503,
+"%"
+],
+[
+"Category Payment Method(Share of GMV) Excluding BPC",
+"Home & Furniture - COD(%)",
+4505,
+"%"
+],
+[
+"Category GMV Split By City Tier Excluding BPC",
+"Babycare - Metro(%)",
+4512,
+"%"
+],
+[
+"Category GMV Split By City Tier Excluding BPC",
+"Fashion - Metro(%)",
+4515,
+"%"
+],
+[
+"Category GMV Split By City Tier Excluding BPC",
+"Home & Furniture - Metro(%)",
+4517,
+"%"
+],
+[
+"Category GMV Split By City Tier Excluding BPC",
+"Babycare- Tier 1(%)",
+4524,
+"%"
+],
+[
+"Category GMV Split By City Tier Excluding BPC",
+"Fashion - Tier 1(%)",
+4527,
+"%"
+],
+[
+"Category GMV Split By City Tier Excluding BPC",
+"Home & Furniture - Tier 1(%)",
+4529,
+"%"
+],
+[
+"Category GMV Split By City Tier Excluding BPC",
+"Babycare - Tier 2+ (%)",
+4536,
+"%"
+],
+[
+"Category GMV Split By City Tier Excluding BPC",
+"Fashion - Tier 2+(%)",
+4539,
+"%"
+],
+[
+"Category GMV Split By City Tier Excluding BPC",
+"Home & Furniture - Tier 2+(%)",
+4541,
+"%"
+],
+[
+"Category RTO/RVP GMV Excluding BPC",
+"Babycare - RTO GMV(%)",
+4548,
+"%"
+],
+[
+"Category RTO/RVP GMV Excluding BPC",
+"Fashion - RTO GMV (%)",
+4551,
+"%"
+],
+[
+"Category RTO/RVP GMV Excluding BPC",
+"Home & Furniture - RTO GMV (%)",
+4553,
+"%"
+],
+[
+"Category RTO/RVP GMV Excluding BPC",
+"Babycare - RVP GMV(%)",
+4560,
+"%"
+],
+[
+"Category RTO/RVP GMV Excluding BPC",
+"Fashion - RVP GMV(%)",
+4563,
+"%"
+],
+[
+"Category RTO/RVP GMV Excluding BPC",
+"Home & Furniture - RVP GMV(%)",
+4565,
+"%"
+],
+[
+"Shipped MTU",
+"Shipped MTU(Mn)",
+13490,
+"Mn"
+],
+[
+"Unit Economics",
+"Contribution Margin - Reliance (CM1)",
+9399,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Contribution Margin - Reliance (CM2)",
+9400,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Revenue from GMV/ GTV - Reliance (INR Cr)",
+9401,
+"INR Cr"
+],
+[
+"Unit Economics",
+"EBIDTA - Reliance (%)",
+9402,
+"%"
+],
+[
+"Unit Economics",
+"CAC (Performance Marketing) - Reliance (INR Cr)",
+9403,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Other Revenue - Reliance (INR Cr)",
+9404,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Payment Gateway cost - Reliance (INR Cr.)",
+9405,
+"INR Cr"
+],
+[
+"Unit Economics",
+"EBITDA - Reliance (INR Cr)",
+9406,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Total Revenue - Reliance (INR Cr)",
+9407,
+"INR Cr"
+],
+[
+"Unit Economics",
+"E-commerce Revenue - Reliance (INR Cr)",
+9408,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Ad Revenue - Reliance (INR Cr)",
+9409,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Total Cost - Reliance (INR Cr)",
+9410,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Discount & Customer Acquisition Cost - Reliance (INR Cr)",
+9411,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Supply chain and logistics costs including payment gateway - Reliance",
+9412,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Contribution Margin - Reliance (INR Cr)",
+9413,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Brand level marketing - Reliance (INR Cr)",
+9414,
+"INR Cr"
+],
+[
+"Unit Economics",
+"People tech and admin and miscellaneous - Reliance (INR Cr)",
+9415,
+"INR Cr"
+],
+[
+"Unit Economics",
+"Take Rates - Reliance(%)",
+9418,
+"%"
+],
+[
+"Gross GMV by Category Delivery Model - BPC",
+"Horizontals (INR Cr)",
+10442,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - BPC",
+"Verticals (INR Cr)",
+10443,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - BPC",
+"Quick Commerce (INR Cr)",
+10444,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - BPC",
+"Brand.com (INR Cr)",
+10445,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Electronics",
+"Horizontals (INR Cr)",
+10446,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Electronics",
+"Verticals (INR Cr)",
+10447,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Electronics",
+"Quick Commerce (INR Cr)",
+10448,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Electronics",
+"Brand.com (INR Cr)",
+10449,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Fashion",
+"Horizontals (INR Cr)",
+10450,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Fashion",
+"Verticals (INR Cr)",
+10451,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Fashion",
+"Quick Commerce (INR Cr)",
+10452,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Fashion",
+"Brand.com (INR Cr)",
+10453,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - HnF",
+"Horizontals (INR Cr)",
+10454,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - HnF",
+"Verticals (INR Cr)",
+10455,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - HnF",
+"Quick Commerce (INR Cr)",
+10456,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - HnF",
+"Brand.com (INR Cr)",
+10457,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Mobiles",
+"Horizontals (INR Cr)",
+10458,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Mobiles",
+"Verticals (INR Cr)",
+10459,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Mobiles",
+"Quick Commerce (INR Cr)",
+10460,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Mobiles",
+"Brand.com (INR Cr)",
+10461,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - ePharma",
+"Horizontals (INR Cr)",
+10462,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - ePharma",
+"Verticals (INR Cr)",
+10463,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - ePharma",
+"Quick Commerce (INR Cr)",
+10464,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - ePharma",
+"Brand.com (INR Cr)",
+10465,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Grocery",
+"Horizontals (INR Cr)",
+10466,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Grocery",
+"Verticals (INR Cr)",
+10467,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Grocery",
+"Quick Commerce (INR Cr)",
+10468,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Grocery",
+"Brand.com (INR Cr)",
+10469,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Others",
+"Horizontals (INR Cr)",
+10470,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Others",
+"Verticals (INR Cr)",
+10471,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Others",
+"Quick Commerce (INR Cr)",
+10472,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Others",
+"Brand.com (INR Cr)",
+10473,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Babycare",
+"Horizontals (INR Cr)",
+10685,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Babycare",
+"Verticals (INR Cr)",
+10686,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Babycare",
+"Quick Commerce (INR Cr)",
+10687,
+"INR Cr"
+],
+[
+"Gross GMV by Category Delivery Model - Babycare",
+"Brand.com (INR Cr)",
+10688,
+"INR Cr"
+],
+[
+"Channel split metrics",
+"Discount - Nykaa",
+11330,
+"%"
+],
+[
+"Channel split metrics",
+"Tax - Nykaa",
+11331,
+"%"
+],
+[
+"Channel split metrics",
+"Online (%)",
+11332,
+"%"
+],
+[
+"Channel split metrics",
+"Offline (%)",
+11333,
+"%"
+],
+[
+"Channel split metrics",
+"Other Verticals (%)",
+11334,
+"%"
+],
+[
+"Channel split metrics",
+"Nykaa Overall GMV",
+11343,
+"INR Cr"
+],
+[
+"Channel split metrics",
+"Fullfilled GOV - Nykaa",
+11344,
+"INR Cr"
+]
+]
+}

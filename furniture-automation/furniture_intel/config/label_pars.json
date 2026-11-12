@@ -1,0 +1,20 @@
+{
+  "_comment": "Row labels the furniture sheets leave without a par_id, and the par_id each stands for. Only the first row with the label is bound, and only when no row already carries that par_id.",
+  "Shipped GMV": 243,
+  "Returned GMV": 244,
+  "Net GMV": 247,
+  "Gross Transactions": 4257,
+  "Monthly unique visitors": 2758,
+  "Category - ASP of the categories": 468,
+  "Category - Number of items shipped per month": 7110,
+  "Orders shipped per day": 7401,
+  "Returns(RTO+RVP)": 7301,
+  "Metro": 7501,
+  "Tier-I": 7502,
+  "% share of inventory": 7601,
+  "Home furnishings as % total items sold": 7121,
+  "Furniture as % total items sold": 7122,
+  "Home Decor as % total items sold": 7123,
+  "Home improvement tools as % total items sold": 7124,
+  "Household as % total items sold": 7125
+}

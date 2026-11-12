@@ -1,0 +1,12 @@
+{
+  "_comment": "Row labels the Revised Babycare sheet leaves without a par_id, and the par_id each stands for. Only the first row with the label is bound, and only when no row already carries that par_id. 7700-7799 are babycare-model ids: 7700 monthly transactions (Mn), 7701 Others GMV, 7711-7715 category shares, 7720-7725 category units ('000), 7731-7733 kids-fashion AOV / kids-fashion frequency / platform frequency.",
+  "Monthly Transactions": 7700,
+  "Shipped GMV": 243,
+  "Returned GMV": 7301,
+  "Net GMV": 247,
+  "Category Shipped Units": 7720,
+  "Category ASP": 468,
+  "Kids Fashion AOV": 7731,
+  "Kids Fashion Frequency": 7732,
+  "Platform Frequency": 7733
+}

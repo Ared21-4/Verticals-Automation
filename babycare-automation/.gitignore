@@ -1,0 +1,13 @@
+__pycache__/
+.pytest_cache/
+.claude/
+
+# run outputs, saved history and scratch work
+outputs/
+data/
+scratch/
+
+# client and benchmark workbooks stay out of the repository
+*.xlsx
+*.xlsm
+*.docx

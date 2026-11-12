@@ -1,0 +1,521 @@
+{
+  "_comment": "The Firstcry upload sheet (the 'Firstcry Webform' layout): parent_question, parameter_name, par_id, unit. par_ids 7801-7812 are the babycare-only rows added for this portal (placeholders for the portal's own ids). Home & Furniture and BPC rows are not Firstcry-modelled and export as null.",
+  "rows": [
+    [
+      "% GMV split by City/Tier",
+      "Metro(%)",
+      476,
+      "%"
+    ],
+    [
+      "% GMV split by City/Tier",
+      "Tier-I(%)",
+      477,
+      "%"
+    ],
+    [
+      "% GMV split by City/Tier",
+      "Tier2+(%)",
+      478,
+      "%"
+    ],
+    [
+      "Payment Method - % Share of Transactions",
+      "CoD(%)",
+      286,
+      "%"
+    ],
+    [
+      "Payment Method - % Share of Transactions",
+      "Pre-Paid(%)",
+      287,
+      "%"
+    ],
+    [
+      "Shipment Split by 3PL and Captive",
+      "% share of Captive(%)",
+      221,
+      "%"
+    ],
+    [
+      "Shipment Split by 3PL and Captive",
+      "% share of 3PL(%)",
+      222,
+      "%"
+    ],
+    [
+      "Topline",
+      "Monthly Transacting Users (Mn)",
+      238,
+      "Mn"
+    ],
+    [
+      "Topline",
+      "Average Order Value (at SP) (INR)",
+      240,
+      "INR"
+    ],
+    [
+      "Topline",
+      "Gross Order Value (at SP) (INR Cr.)",
+      241,
+      "INR Cr"
+    ],
+    [
+      "Topline",
+      "Cancelled GOV (at SP) (%)",
+      242,
+      "%"
+    ],
+    [
+      "Topline",
+      "RTO(%)",
+      245,
+      "%"
+    ],
+    [
+      "Topline",
+      "RVP(%)",
+      246,
+      "%"
+    ],
+    [
+      "Category - Shipped GMV",
+      "Diaper & Nappies",
+      294,
+      "INR Cr"
+    ],
+    [
+      "Category - Shipped GMV",
+      "Baby Care Supplies",
+      295,
+      "INR Cr"
+    ],
+    [
+      "Category - Shipped GMV",
+      "Baby Gear",
+      296,
+      "INR Cr"
+    ],
+    [
+      "Category ASP",
+      "Diaper and Nappies",
+      515,
+      "INR"
+    ],
+    [
+      "Category ASP",
+      "Baby Care Supplies",
+      516,
+      "INR"
+    ],
+    [
+      "Category ASP",
+      "Baby Gear",
+      522,
+      "INR"
+    ],
+    [
+      "Category ASP",
+      "Others",
+      523,
+      "INR"
+    ],
+    [
+      "Category Shipped GMV - BPC",
+      "Makeup&Fragrance (INR Cr.)",
+      250,
+      "INR Cr"
+    ],
+    [
+      "Category Shipped GMV - BPC",
+      "BPC (INR Cr.)",
+      580,
+      "INR Cr"
+    ],
+    [
+      "Category Shipped GMV - BPC",
+      "Grooming/Personal care(INR Cr)",
+      2776,
+      "INR Cr"
+    ],
+    [
+      "Category Shipped GMV - BPC",
+      "Beauty Appliances (INR Cr)",
+      4571,
+      "INR Cr"
+    ],
+    [
+      "Category  ASP - BPC",
+      "Beauty&Personal Care(INR)",
+      1379,
+      "INR"
+    ],
+    [
+      "Category  ASP - BPC",
+      "Grooming/Personal care(INR)",
+      2813,
+      "INR"
+    ],
+    [
+      "Category  ASP - BPC",
+      "Makeup&Fragrance (INR)",
+      2814,
+      "INR"
+    ],
+    [
+      "Category  ASP - BPC",
+      "Beauty Appliances (INR)",
+      4573,
+      "INR"
+    ],
+    [
+      "Category Shipped GMV - Home & Furniture",
+      "Home furnishings (INR Cr)",
+      425,
+      "INR Cr"
+    ],
+    [
+      "Category Shipped GMV - Home & Furniture",
+      "Furniture (INR Cr)",
+      426,
+      "INR Cr"
+    ],
+    [
+      "Category Shipped GMV - Home & Furniture",
+      "Home Decor (INR Cr)",
+      427,
+      "INR Cr"
+    ],
+    [
+      "Category Shipped GMV - Home & Furniture",
+      "Home improvement tools (INR Cr)",
+      428,
+      "INR Cr"
+    ],
+    [
+      "Category Shipped GMV - Home & Furniture",
+      "Household (INR Cr)",
+      429,
+      "INR Cr"
+    ],
+    [
+      "Category Shipped GMV - Home & Furniture",
+      "Home & Furniture (INR Cr)",
+      458,
+      "INR Cr"
+    ],
+    [
+      "Category ASP - Home & Furniture",
+      "Home & Furniture (INR)",
+      474,
+      "INR"
+    ],
+    [
+      "Category ASP - Home & Furniture",
+      "Home Furnishing",
+      498,
+      "INR"
+    ],
+    [
+      "Category ASP - Home & Furniture",
+      "Furniture",
+      499,
+      "INR"
+    ],
+    [
+      "Category ASP - Home & Furniture",
+      "Home Decor",
+      500,
+      "INR"
+    ],
+    [
+      "Category ASP - Home & Furniture",
+      "Home improvement",
+      502,
+      "INR"
+    ],
+    [
+      "Category ASP - Home & Furniture",
+      "Household",
+      503,
+      "INR"
+    ],
+    [
+      "Category Shipped GMV - Fashion",
+      "Fashion(INR Cr)",
+      457,
+      "INR Cr"
+    ],
+    [
+      "Category Shipped GMV - Fashion",
+      "Kids Fashion(INR Cr)",
+      1551,
+      "INR Cr"
+    ],
+    [
+      "Category ASP - Fashion",
+      "Fashion (INR)",
+      473,
+      "INR"
+    ],
+    [
+      "Category ASP - Fashion",
+      "Kids Fashion",
+      514,
+      "INR"
+    ],
+    [
+      "Category Gross Transaction Excluding Babycare",
+      "Fashion(Mn)",
+      4254,
+      "Mn"
+    ],
+    [
+      "Category Gross Transaction Excluding Babycare",
+      "Home & Furniture (Mn)",
+      4255,
+      "Mn"
+    ],
+    [
+      "Category Gross Transaction Excluding Babycare",
+      "BPC (Mn)",
+      4257,
+      "Mn"
+    ],
+    [
+      "Category - MTU Excluding Babycare",
+      "Beauty & Personal CareÂ (Mn)",
+      3612,
+      "Mn"
+    ],
+    [
+      "Category - MTU Excluding Babycare",
+      "Fashion (Mn)",
+      3616,
+      "Mn"
+    ],
+    [
+      "Category - MTU Excluding Babycare",
+      "Home & Furniture (Mn)",
+      3617,
+      "Mn"
+    ],
+    [
+      "Category - Cancelled GMV Excluding Babycare",
+      "Beauty & Personal Care(%)",
+      4371,
+      "%"
+    ],
+    [
+      "Category - Cancelled GMV Excluding Babycare",
+      "Fashion(%)",
+      4374,
+      "%"
+    ],
+    [
+      "Category - Cancelled GMV Excluding Babycare",
+      "Home & Furniture(%)",
+      4376,
+      "%"
+    ],
+    [
+      "Category Payment Method(Share of GMV) Excluding Babycare",
+      "Beauty & Personal Care - PrePaid(%)",
+      4487,
+      "%"
+    ],
+    [
+      "Category Payment Method(Share of GMV) Excluding Babycare",
+      "Fashion - PrePaid(%)",
+      4491,
+      "%"
+    ],
+    [
+      "Category Payment Method(Share of GMV) Excluding Babycare",
+      "Home & Furniture - PrePaid(%)",
+      4493,
+      "%"
+    ],
+    [
+      "Category Payment Method(Share of GMV) Excluding Babycare",
+      "Beauty & Personal Care - COD(%)",
+      4499,
+      "%"
+    ],
+    [
+      "Category Payment Method(Share of GMV) Excluding Babycare",
+      "Fashion - COD(%)",
+      4503,
+      "%"
+    ],
+    [
+      "Category Payment Method(Share of GMV) Excluding Babycare",
+      "Home & Furniture - COD(%)",
+      4505,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Excluding Babycare",
+      "Beauty & Personal Care - Metro(%)",
+      4511,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Excluding Babycare",
+      "Fashion - Metro(%)",
+      4515,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Excluding Babycare",
+      "Home & Furniture - Metro(%)",
+      4517,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Excluding Babycare",
+      "Beauty & Personal Care - Tier 1(%)",
+      4523,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Excluding Babycare",
+      "Fashion - Tier 1(%)",
+      4527,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Excluding Babycare",
+      "Home & Furniture - Tier 1(%)",
+      4529,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Excluding Babycare",
+      "Beauty & Personal Care - Tier 2+ (%)",
+      4535,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Excluding Babycare",
+      "Fashion  - Tier 2+(%)",
+      4539,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Excluding Babycare",
+      "Home & Furniture  - Tier 2+(%)",
+      4541,
+      "%"
+    ],
+    [
+      "Category RTO/RVP GMV Excluding Babycare",
+      "Beauty & Personal Care - RTO GMV (%)",
+      4547,
+      "%"
+    ],
+    [
+      "Category RTO/RVP GMV Excluding Babycare",
+      "Fashion  - RTO GMV (%)",
+      4551,
+      "%"
+    ],
+    [
+      "Category RTO/RVP GMV Excluding Babycare",
+      "Home & Furniture  - RTO GMV (%)",
+      4553,
+      "%"
+    ],
+    [
+      "Category RTO/RVP GMV Excluding Babycare",
+      "Beauty & Personal Care - RVP GMV(%)",
+      4559,
+      "%"
+    ],
+    [
+      "Category RTO/RVP GMV Excluding Babycare",
+      "Fashion - RVP GMV(%)",
+      4563,
+      "%"
+    ],
+    [
+      "Category RTO/RVP GMV Excluding Babycare",
+      "Home & Furniture - RVP GMV(%)",
+      4565,
+      "%"
+    ],
+    [
+      "Category Gross Transaction Babycare",
+      "Babycare (Mn)",
+      7801,
+      "Mn"
+    ],
+    [
+      "Category - MTU Babycare",
+      "Babycare (Mn)",
+      7802,
+      "Mn"
+    ],
+    [
+      "Category - Cancelled GMV Babycare",
+      "Babycare(%)",
+      7803,
+      "%"
+    ],
+    [
+      "Category Shipped GMV - Babycare",
+      "Babycare (INR Cr)",
+      7804,
+      "INR Cr"
+    ],
+    [
+      "Category ASP - Babycare",
+      "Babycare (INR)",
+      7805,
+      "INR"
+    ],
+    [
+      "Category Payment Method(Share of GMV) Babycare",
+      "Babycare - PrePaid(%)",
+      7806,
+      "%"
+    ],
+    [
+      "Category Payment Method(Share of GMV) Babycare",
+      "Babycare - COD(%)",
+      7807,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Babycare",
+      "Babycare - Metro(%)",
+      7808,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Babycare",
+      "Babycare - Tier 1(%)",
+      7809,
+      "%"
+    ],
+    [
+      "Category GMV Split By City Tier Babycare",
+      "Babycare - Tier 2+(%)",
+      7810,
+      "%"
+    ],
+    [
+      "Category RTO/RVP GMV Babycare",
+      "Babycare - RTO GMV (%)",
+      7811,
+      "%"
+    ],
+    [
+      "Category RTO/RVP GMV Babycare",
+      "Babycare - RVP GMV(%)",
+      7812,
+      "%"
+    ]
+  ]
+}

@@ -1,0 +1,733 @@
+{
+  "profile": "fashion",
+  "_comment": "Shared profile for every player in the reference workbook. Metrics are addressed by par_id, which is stable across players, rather than by row number, which is not. A player config overrides only what differs; any metric whose par_id the player's sheet does not carry is reported as unavailable rather than invented.",
+  "currency": "INR",
+  "gmv_unit": "INR Cr",
+  "reference": {
+    "par_id_col": 1,
+    "name_col": 2,
+    "unit_col": 3,
+    "first_month_col": 4,
+    "header_row": 5,
+    "first_data_row": 6,
+    "output_template_sheet": "Myntra-WF"
+  },
+  "metrics": {
+    "_comment": "metric name -> par_id. Resolved against the player's own sheet at load.",
+    "gross_gmv": 241,
+    "cancellation_pct": 242,
+    "shipped_gmv": 243,
+    "returns_pct": 244,
+    "rto_pct": 245,
+    "rvp_pct": 246,
+    "net_gmv": 247,
+    "aov": 240,
+    "gross_transactions": 239,
+    "asp": 468,
+    "mtu": 238,
+    "frequency": 2769,
+    "basket_size": 519,
+    "cod_pct": 286,
+    "prepaid_pct": 287,
+    "metro_pct": 476,
+    "tier1_pct": 477,
+    "tier2plus_pct": 478,
+    "mau": 52,
+    "mac": 2762,
+    "captive_pct": 221,
+    "tpl_pct": 222,
+    "captive_gmv": 3445,
+    "tpl_gmv": 3446,
+    "unique_visitors": 2758,
+    "sessions": 161,
+    "web_share": 162,
+    "app_share": 163,
+    "registered_users": 2587,
+    "avg_shipment_value": 3548,
+    "app_mau": 2588,
+    "app_dau": 2589,
+    "web_mau": 2590,
+    "web_dau": 2591,
+    "app_sessions": 2592,
+    "app_sessions_per_day": 2593,
+    "app_time_per_session": 2594,
+    "web_sessions": 2595,
+    "web_sessions_per_day": 2596,
+    "web_time_per_session": 2597,
+    "txn_app_pct": 2599,
+    "txn_new_pct": 2601,
+    "paid_pct": 2605,
+    "organic_pct": 2606,
+    "cac": 2607,
+    "m1_retention": 2608,
+    "m3_retention": 2609
+  },
+  "gmv_anchor": "auto",
+  "_gmv_anchor_comment": "auto: anchor on whichever of shipped or gross GMV the MIS reports; fall back to the series the player's sheet actually stores. Myntra reports shipped; most players store gross.",
+  "mis_sections": {
+    "overall": "Overall",
+    "category_gmv": "Category GMV",
+    "category_asp": "Category ASP",
+    "payment": "Payment Split",
+    "geography": "Geographic Split"
+  },
+  "mis_metric_names": {
+    "gross_gmv": "Gross GMV at SP",
+    "returns": "Returns",
+    "aov": "AOV at SP",
+    "shipped_gmv": "Shipped GMV",
+    "mtu": "Monthly Transacting Users",
+    "orders": "Monthly Orders",
+    "cod": "COD (%)",
+    "prepaid": "Prepaid (%)",
+    "metro": "Metro",
+    "tier1": "Tier 1",
+    "tier2plus": "Tier 2+"
+  },
+  "mis_definition_conflicts": {
+    "_comment": "Unit-definition mismatches between a MIS and the model. Surfaced on every run; never silently applied.",
+    "AOV at SP": {
+      "model_metric": "aov",
+      "note": "Check whether the MIS AOV is order-level or shipment-level before using it."
+    },
+    "Monthly Orders": {
+      "model_metric": "gross_transactions",
+      "note": "Check whether MIS orders are order-level or shipment-level."
+    },
+    "Monthly Transacting Users": {
+      "model_metric": "mtu",
+      "note": "Check whether MIS users are transacting users or a reached base."
+    }
+  },
+  "plausibility_bounds": {
+    "cancellation_pct": {
+      "max_abs_mom_delta": 0.04
+    },
+    "returns_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "metro_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "tier1_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "tier2plus_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "basket_size": {
+      "max_abs_mom_delta": 0.3
+    },
+    "shipped_gmv": {
+      "max_abs_mom_pct": 0.6
+    },
+    "gross_gmv": {
+      "max_abs_mom_pct": 0.6
+    }
+  },
+  "output_layout": {
+    "nulls_last": true,
+    "sections": [
+      {
+        "name": "Platform topline",
+        "match": [
+          "^GMV$",
+          "^AOV$",
+          "^Topline$",
+          "^Other Topline Metrics$"
+        ]
+      },
+      {
+        "name": "Category shipped GMV",
+        "match": [
+          "^Category Shipped GMV"
+        ]
+      },
+      {
+        "name": "Category ASP",
+        "match": [
+          "^Category\\s+ASP"
+        ]
+      },
+      {
+        "name": "Category contribution",
+        "match": [
+          "^Category Shipped % GMV"
+        ]
+      },
+      {
+        "name": "Other calculated metrics",
+        "match": [
+          ".*"
+        ]
+      }
+    ]
+  },
+  "extra_parameters": {
+    "_comment": "Parameters the model computes but the reference upload template omits: platform shipped/net GMV, ASP, basket, transactions, and the whole Fashion/Apparel category GMV tree. Appended after the template's own 158 rows; rows join the template group of the same name.",
+    "rows": [
+      {
+        "parent_question": "GMV",
+        "parameter_name": "Shipped GMV (INR Cr)",
+        "par_id": 243,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "GMV",
+        "parameter_name": "Net GMV (INR Cr)",
+        "par_id": 247,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "GMV",
+        "parameter_name": "Returns (%)",
+        "par_id": 244,
+        "unit": "%"
+      },
+      {
+        "parent_question": "AOV",
+        "parameter_name": "ASP (INR)",
+        "par_id": 468,
+        "unit": "INR"
+      },
+      {
+        "parent_question": "AOV",
+        "parameter_name": "Basket Size (#)",
+        "par_id": 519,
+        "unit": "#"
+      },
+      {
+        "parent_question": "AOV",
+        "parameter_name": "Gross Transactions (Mn)",
+        "par_id": 239,
+        "unit": "Mn"
+      },
+      {
+        "parent_question": "AOV",
+        "parameter_name": "Frequency (#)",
+        "par_id": 2769,
+        "unit": "#"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Fashion (INR Cr)",
+        "par_id": 457,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Apparel/clothing (INR Cr)",
+        "par_id": 554,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Women Clothing (INR Cr)",
+        "par_id": 1537,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Women's ethnicwear (INR Cr)",
+        "par_id": 1538,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Women's westernwear (INR Cr)",
+        "par_id": 1539,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Women's Innerwear (INR Cr)",
+        "par_id": 1540,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Women's Sportswear (INR Cr)",
+        "par_id": 1541,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Men Clothing (INR Cr)",
+        "par_id": 1542,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Men's ethnicwear (INR Cr)",
+        "par_id": 1543,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Men's westernwear (INR Cr)",
+        "par_id": 1544,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Men's Innerwear (INR Cr)",
+        "par_id": 1545,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Men's Sportswear (INR Cr)",
+        "par_id": 1546,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Kids Fashion (INR Cr)",
+        "par_id": 1551,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Footwear (INR Cr)",
+        "par_id": 559,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Women Footwear (INR Cr)",
+        "par_id": 1547,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Women casual+ formal footwear (INR Cr)",
+        "par_id": 2855,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Women Sports Footwear (INR Cr)",
+        "par_id": 2856,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Men Footwear (INR Cr)",
+        "par_id": 1550,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Men casual+ formal footwear (INR Cr)",
+        "par_id": 2857,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Men Sports Footwear (INR Cr)",
+        "par_id": 2858,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Accessories (INR Cr)",
+        "par_id": 562,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Jewellery (INR Cr)",
+        "par_id": 1552,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "LTA (Women's+Men's) (INR Cr)",
+        "par_id": 1553,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Watches (INR Cr)",
+        "par_id": 1554,
+        "unit": "INR Cr"
+      },
+      {
+        "parent_question": "Category Shipped GMV - Fashion",
+        "parameter_name": "Fashion Accessories (INR Cr)",
+        "par_id": 1555,
+        "unit": "INR Cr"
+      }
+    ]
+  },
+  "fashion_tree": {
+    "_comment": "Category shipped GMV = category share x platform shipped GMV, exactly as the reference model computes it. Players store shares and ASPs, not GMV, so this builds the whole apparel tree for any player from its own history. Used only where a player has no tuned category taxonomy.",
+    "leaves": [
+      {
+        "gmv": 1538,
+        "share": 1384,
+        "asp": 1361,
+        "label": "Women's ethnicwear"
+      },
+      {
+        "gmv": 1539,
+        "share": 1385,
+        "asp": 1362,
+        "label": "Women's westernwear"
+      },
+      {
+        "gmv": 1540,
+        "share": 1386,
+        "asp": 1363,
+        "label": "Women's Innerwear"
+      },
+      {
+        "gmv": 1541,
+        "share": 1387,
+        "asp": 1364,
+        "label": "Women's Sportswear"
+      },
+      {
+        "gmv": 1543,
+        "share": 1389,
+        "asp": 1366,
+        "label": "Men's ethnicwear"
+      },
+      {
+        "gmv": 1544,
+        "share": 1390,
+        "asp": 1367,
+        "label": "Men's westernwear"
+      },
+      {
+        "gmv": 1545,
+        "share": 1391,
+        "asp": 1368,
+        "label": "Men's Innerwear"
+      },
+      {
+        "gmv": 1546,
+        "share": 1392,
+        "asp": 1369,
+        "label": "Men's Sportswear"
+      },
+      {
+        "gmv": 1551,
+        "share": 1398,
+        "asp": 514,
+        "label": "Kids Fashion"
+      },
+      {
+        "gmv": 2855,
+        "share": 1395,
+        "asp": 1371,
+        "label": "Women casual+formal footwear"
+      },
+      {
+        "gmv": 2856,
+        "share": 1396,
+        "asp": 1372,
+        "label": "Women Sports Footwear"
+      },
+      {
+        "gmv": 2857,
+        "share": 1424,
+        "asp": 1422,
+        "label": "Men casual+formal footwear"
+      },
+      {
+        "gmv": 2858,
+        "share": 1425,
+        "asp": 1423,
+        "label": "Men Sports Footwear"
+      },
+      {
+        "gmv": 1552,
+        "share": 1400,
+        "asp": 1375,
+        "label": "Jewellery"
+      },
+      {
+        "gmv": 1553,
+        "share": 1401,
+        "asp": 1376,
+        "label": "LTA"
+      },
+      {
+        "gmv": 1554,
+        "share": 1402,
+        "asp": 1377,
+        "label": "Watches"
+      },
+      {
+        "gmv": 1555,
+        "share": 1403,
+        "asp": 1378,
+        "label": "Fashion Accessories"
+      }
+    ],
+    "other_shares": [
+      1406,
+      1407,
+      1408
+    ],
+    "rollups": {
+      "1537": [
+        1538,
+        1539,
+        1540,
+        1541
+      ],
+      "1542": [
+        1543,
+        1544,
+        1545,
+        1546
+      ],
+      "554": [
+        1537,
+        1542,
+        1551
+      ],
+      "1547": [
+        2855,
+        2856
+      ],
+      "1550": [
+        2857,
+        2858
+      ],
+      "559": [
+        1547,
+        1550
+      ],
+      "562": [
+        1552,
+        1553,
+        1554,
+        1555
+      ],
+      "457": [
+        554,
+        559,
+        562
+      ]
+    },
+    "min_coverage_for_platform_asp": 0.6
+  },
+  "split_groups": {
+    "_comment": "Percentage splits that must sum to the prior month's total. Estimated member by member, then rescaled together.",
+    "groups": [
+      [
+        223,
+        224,
+        225,
+        226
+      ],
+      [
+        1409,
+        1410,
+        1411,
+        1412
+      ],
+      [
+        1431,
+        1579
+      ]
+    ]
+  },
+  "mis_generic": {
+    "_comment": "The standard fashion MIS template, used by every player except Myntra (which has its own tuned reader). Labels are matched case-insensitively. Category GMV is mapped by par_id so one table serves every player.",
+    "zero_means_missing": true,
+    "gmv_scale": "auto",
+    "scale_candidates": [
+      1,
+      10000000
+    ],
+    "overall": {
+      "gross_gmv": [
+        "Gross GMV at SP",
+        "Gross GMV"
+      ],
+      "shipped_gmv": [
+        "Shipped GMV"
+      ],
+      "cancellation_pct": [
+        "Cancellations (%)",
+        "Cancellation (%)",
+        "Cancellation"
+      ],
+      "rto_pct": [
+        "RTO (%)",
+        "RTO"
+      ],
+      "rvp_pct": [
+        "RVP (%)",
+        "RVP"
+      ],
+      "aov": [
+        "AOV at SP",
+        "AOV"
+      ],
+      "asp": [
+        "Platform ASP",
+        "ASP"
+      ],
+      "mau": [
+        "Monthly Active Users"
+      ],
+      "mtu": [
+        "Monthly Transacting Users"
+      ],
+      "orders": [
+        "Monthly Orders"
+      ],
+      "conversion": [
+        "Conversion %"
+      ]
+    },
+    "categories": {
+      "women's ethnicwear": {
+        "gmv": 1538,
+        "asp": 1361,
+        "share": 1384
+      },
+      "women's westernwear": {
+        "gmv": 1539,
+        "asp": 1362,
+        "share": 1385
+      },
+      "women's innerwear": {
+        "gmv": 1540,
+        "asp": 1363,
+        "share": 1386
+      },
+      "women's sportswear": {
+        "gmv": 1541,
+        "asp": 1364,
+        "share": 1387
+      },
+      "men's ethnicwear / occasion wear": {
+        "gmv": 1543,
+        "asp": 1366,
+        "share": 1389
+      },
+      "men's ethnicwear": {
+        "gmv": 1543,
+        "asp": 1366,
+        "share": 1389
+      },
+      "men's westernwear": {
+        "gmv": 1544,
+        "asp": 1367,
+        "share": 1390
+      },
+      "men's innerwear": {
+        "gmv": 1545,
+        "asp": 1368,
+        "share": 1391
+      },
+      "men's sportswear": {
+        "gmv": 1546,
+        "asp": 1369,
+        "share": 1392
+      },
+      "kids fashion": {
+        "gmv": 1551,
+        "asp": 514,
+        "share": 1398
+      },
+      "women's footwear": {
+        "gmv": 2855,
+        "asp": 1371,
+        "share": 1395
+      },
+      "women's sports footwear": {
+        "gmv": 2856,
+        "asp": 1372,
+        "share": 1396
+      },
+      "men's footwear": {
+        "gmv": 2857,
+        "asp": 1422,
+        "share": 1424
+      },
+      "men's sports footwear": {
+        "gmv": 2858,
+        "asp": 1423,
+        "share": 1425
+      },
+      "jewellery": {
+        "gmv": 1552,
+        "asp": 1375,
+        "share": 1400
+      },
+      "lta": {
+        "gmv": 1553,
+        "asp": 1376,
+        "share": 1401
+      },
+      "watches": {
+        "gmv": 1554,
+        "asp": 1377,
+        "share": 1402
+      },
+      "fashion accessories": {
+        "gmv": 1555,
+        "asp": 1378,
+        "share": 1403
+      },
+      "home": {
+        "gmv": 458,
+        "asp": 474,
+        "share": 1408
+      },
+      "makeup & fragrance": {
+        "gmv": 250,
+        "asp": 3136,
+        "share": 1406
+      },
+      "personal care": {
+        "gmv": 2776,
+        "asp": 1380,
+        "share": 1407
+      }
+    },
+    "price_buckets": {
+      "<300": 1413,
+      "300-500": 1414,
+      "1000-1500": 1417,
+      "1500+": 1418
+    },
+    "unsplit_buckets": {
+      "500-1000": [
+        1415,
+        1416
+      ]
+    },
+    "aov_tolerance": [
+      0.65,
+      1.35
+    ],
+    "_scale_note": "Auto-detection only chooses between crore (1) and rupees (10,000,000). Lakh and million are deliberately not guessed: a different player's crore figure divided by 10 looks like a plausible number and let a wrong file pass. If a player really sends lakh or million, set gmv_scale explicitly in its config (100 or 10)."
+  },
+  "corroboration": [
+    {
+      "name": "Platform GMV against the expert's stated figure",
+      "method": "stated_vs_platform",
+      "label": "Platform GMV",
+      "platform_metric": "gross_gmv"
+    }
+  ],
+  "history_balance": {
+    "_comment": "The stored history is used to keep MoM and YoY from being far off each other. The reported level is moved toward the level whose growth, on stored history, best matches the MIS's stated MoM and YoY. weight 1 = fully balanced, 0 = the MIS figure unchanged. The reported figure is always kept beside the output.",
+    "enabled": true,
+    "weight": 1.0,
+    "max_adjustment": 0.15,
+    "max_gap_for_trust": 0.2,
+    "min_weight": 0.25,
+    "applies_to": [
+      "gross_gmv"
+    ]
+  }
+}

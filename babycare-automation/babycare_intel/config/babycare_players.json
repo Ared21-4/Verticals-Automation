@@ -1,0 +1,20 @@
+{
+  "_comment": "The babycare players this system covers. 'sheet' is the tab in the reference workbook that holds the player's history. 'start_month' is the first month read. Add a line here to add a player.",
+  "players": [
+    {
+      "name": "Firstcry",
+      "sheet": "Revised Babycare",
+      "start_month": "2021-01",
+      "aliases": [
+        "firstcry",
+        "first cry",
+        "fc",
+        "babycare"
+      ]
+    }
+  ],
+  "templates": [],
+  "batch_default": [
+    "Firstcry"
+  ]
+}

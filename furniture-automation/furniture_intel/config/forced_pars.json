@@ -1,0 +1,43 @@
+{
+  "_comment": "Rows whose par_id is set here replace what the sheet wrote. 'sections' name a block by the prefix of the row that opens it; a rule 'section::label' applies only inside that block. Pepperfry holds par_ids 1426-1430 on the category share rows and Urban Ladder on the category GMV rows; Pepperfry keeps its RTO and RVP figures on helper rows (labelled in the units column), so those two rules are Pepperfry's alone: Urban Ladder's helper rows hold other things.",
+  "sections": {
+    "sess": "monthly sessions",
+    "uv": "monthly unique visitors",
+    "gmv": "category - shipped gmv",
+    "items": "category - number of items",
+    "asp": "category - asp",
+    "end": "gross transactions",
+    "end2": "average order value",
+    "end3": "payment method"
+  },
+  "rows": {
+    "gmv::home furnishings": 7101,
+    "gmv::furniture": 7102,
+    "gmv::home decor": 7103,
+    "gmv::home improvement tools": 7104,
+    "gmv::household": 7105,
+    "items::home furnishings": 7111,
+    "items::furniture": 7112,
+    "items::home decor": 7113,
+    "items::home improvement tools": 7114,
+    "items::household": 7115,
+    "asp::home furnishings": 498,
+    "asp::furniture": 499,
+    "asp::home decor": 500,
+    "asp::home improvement tools": 502,
+    "asp::household": 503,
+    "::home furnishings as % total shipped gmv": 1426,
+    "::furniture as % total shipped gmv": 1427,
+    "::home decor as % total shipped gmv": 1428,
+    "::home improvement tools as % total shipped gmv": 1429,
+    "::household as % total shipped gmv": 1430,
+    "uv::% app": 7201,
+    "uv::% desktop + web": 7202
+  },
+  "sheets": {
+    "Pepperfry Automated": {
+      "::rto%": 245,
+      "::rvp%": 246
+    }
+  }
+}

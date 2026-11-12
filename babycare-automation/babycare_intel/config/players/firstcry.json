@@ -1,0 +1,4 @@
+{
+  "_comment": "Firstcry: returned GMV = shipped GMV x returns % (RTO + RVP), as the Revised Babycare sheet defines Net GMV.",
+  "returns_base": "shipped"
+}

@@ -1,0 +1,407 @@
+{
+  "_comment": "The furniture upload sheet, the same for every player: the rows of the 'Furniture Output' sheet in delivered order, then an Additional block (MTU, cancellation, the strict three-way city split). Rows: parent_question, parameter_name, par_id, unit.",
+  "rows": [
+    [
+      "Monthly Sessions",
+      "Monthly Sessions (Mn)",
+      161,
+      "Mn"
+    ],
+    [
+      "Monthly Sessions",
+      "% App (%)",
+      163,
+      "%"
+    ],
+    [
+      "Monthly Sessions",
+      "% Desktop + Web (%)",
+      162,
+      "%"
+    ],
+    [
+      "Monthly unique visitors",
+      "Monthly unique visitors (Cr)",
+      2758,
+      "Cr"
+    ],
+    [
+      "Monthly unique visitors",
+      "% App (%)",
+      7201,
+      "%"
+    ],
+    [
+      "Monthly unique visitors",
+      "% Desktop + Web (%)",
+      7202,
+      "%"
+    ],
+    [
+      "Gross Transactions",
+      "Gross Transactions (#)",
+      4257,
+      "#"
+    ],
+    [
+      "GMV",
+      "Gross/Checkout GMV (INR Cr)",
+      241,
+      "INR Cr"
+    ],
+    [
+      "GMV",
+      "Shipped GMV (INR Cr)",
+      243,
+      "INR Cr"
+    ],
+    [
+      "GMV",
+      "Returned GMV (INR Cr)",
+      244,
+      "INR Cr"
+    ],
+    [
+      "GMV",
+      "RTO (%)",
+      245,
+      "%"
+    ],
+    [
+      "GMV",
+      "RVP (%)",
+      246,
+      "%"
+    ],
+    [
+      "GMV",
+      "Net GMV (INR Cr)",
+      247,
+      "INR Cr"
+    ],
+    [
+      "Category - Shipped GMV for the month",
+      "Home furnishings (INR Cr)",
+      7101,
+      "INR Cr"
+    ],
+    [
+      "Category - Shipped GMV for the month",
+      "Furniture (INR Cr)",
+      7102,
+      "INR Cr"
+    ],
+    [
+      "Category - Shipped GMV for the month",
+      "Home Décor (INR Cr)",
+      7103,
+      "INR Cr"
+    ],
+    [
+      "Category - Shipped GMV for the month",
+      "Home improvement tools (INR Cr)",
+      7104,
+      "INR Cr"
+    ],
+    [
+      "Category - Shipped GMV for the month",
+      "Household (INR Cr)",
+      7105,
+      "INR Cr"
+    ],
+    [
+      "Category - Shipped GMV share",
+      "Home furnishings as % total shipped GMV (%)",
+      1426,
+      "%"
+    ],
+    [
+      "Category - Shipped GMV share",
+      "Furniture as % total shipped GMV (%)",
+      1427,
+      "%"
+    ],
+    [
+      "Category - Shipped GMV share",
+      "Home Décor as % total shipped GMV (%)",
+      1428,
+      "%"
+    ],
+    [
+      "Category - Shipped GMV share",
+      "Home improvement tools as % total shipped GMV (%)",
+      1429,
+      "%"
+    ],
+    [
+      "Category - Shipped GMV share",
+      "Household as % total shipped GMV (%)",
+      1430,
+      "%"
+    ],
+    [
+      "Category - Number of items shipped per month",
+      "Items shipped (#)",
+      7110,
+      "#"
+    ],
+    [
+      "Category - Number of items shipped per month",
+      "Home furnishings (#)",
+      7111,
+      "#"
+    ],
+    [
+      "Category - Number of items shipped per month",
+      "Furniture (#)",
+      7112,
+      "#"
+    ],
+    [
+      "Category - Number of items shipped per month",
+      "Home Décor (#)",
+      7113,
+      "#"
+    ],
+    [
+      "Category - Number of items shipped per month",
+      "Home improvement tools (#)",
+      7114,
+      "#"
+    ],
+    [
+      "Category - Number of items shipped per month",
+      "Household (#)",
+      7115,
+      "#"
+    ],
+    [
+      "Category - Items share",
+      "Home furnishings as % total items sold (%)",
+      7121,
+      "%"
+    ],
+    [
+      "Category - Items share",
+      "Furniture as % total items sold (%)",
+      7122,
+      "%"
+    ],
+    [
+      "Category - Items share",
+      "Home Décor as % total items sold (%)",
+      7123,
+      "%"
+    ],
+    [
+      "Category - Items share",
+      "Home improvement tools as % total items sold (%)",
+      7124,
+      "%"
+    ],
+    [
+      "Category - Items share",
+      "Household as % total items sold (%)",
+      7125,
+      "%"
+    ],
+    [
+      "Category - ASP of the categories",
+      "Platform ASP (INR)",
+      468,
+      "INR"
+    ],
+    [
+      "Category - ASP of the categories",
+      "Home furnishings (INR)",
+      498,
+      "INR"
+    ],
+    [
+      "Category - ASP of the categories",
+      "Furniture (INR)",
+      499,
+      "INR"
+    ],
+    [
+      "Category - ASP of the categories",
+      "Home Décor (INR)",
+      500,
+      "INR"
+    ],
+    [
+      "Category - ASP of the categories",
+      "Home improvement tools (INR)",
+      502,
+      "INR"
+    ],
+    [
+      "Category - ASP of the categories",
+      "Household (INR)",
+      503,
+      "INR"
+    ],
+    [
+      "Average order value",
+      "Average order value (INR)",
+      240,
+      "INR"
+    ],
+    [
+      "Payment Method - % Share of Transactions",
+      "% COD (%)",
+      286,
+      "%"
+    ],
+    [
+      "Payment Method - % Share of Transactions",
+      "% Prepaid (%)",
+      287,
+      "%"
+    ],
+    [
+      "Supply chain",
+      "Orders shipped per day (#)",
+      7401,
+      "#"
+    ],
+    [
+      "Supply chain",
+      "Total FCs (#)",
+      214,
+      "#"
+    ],
+    [
+      "Supply chain",
+      "Returns(RTO+RVP) (% of GMV)",
+      7301,
+      "%"
+    ],
+    [
+      "Supply chain",
+      "No of pick up stores (ADM) (#)",
+      216,
+      "#"
+    ],
+    [
+      "Supply chain",
+      "% items delivered through ADMs (%)",
+      217,
+      "%"
+    ],
+    [
+      "Supply chain",
+      "% active stores (%)",
+      218,
+      "%"
+    ],
+    [
+      "Share of warehouse",
+      "% Fulfilled+ share by orders (%)",
+      219,
+      "%"
+    ],
+    [
+      "Share of warehouse",
+      "% Fulfilled+ share by GMV (%)",
+      220,
+      "%"
+    ],
+    [
+      "Shipment Split by 3PL and Captive",
+      "% share of Captive (%)",
+      221,
+      "%"
+    ],
+    [
+      "Shipment Split by 3PL and Captive",
+      "% share of 3PL (%)",
+      222,
+      "%"
+    ],
+    [
+      "GMV split by Zone",
+      "East (%)",
+      223,
+      "%"
+    ],
+    [
+      "GMV split by Zone",
+      "West (%)",
+      224,
+      "%"
+    ],
+    [
+      "GMV split by Zone",
+      "North (%)",
+      225,
+      "%"
+    ],
+    [
+      "GMV split by Zone",
+      "South (%)",
+      226,
+      "%"
+    ],
+    [
+      "GMV split by City/Tier",
+      "Metro (%)",
+      7501,
+      "%"
+    ],
+    [
+      "GMV split by City/Tier",
+      "Tier-I (%)",
+      7502,
+      "%"
+    ],
+    [
+      "GMV split by City/Tier",
+      "Others (%)",
+      478,
+      "%"
+    ],
+    [
+      "% Marketplace vs inventory",
+      "% share of marketplace (%)",
+      446,
+      "%"
+    ],
+    [
+      "% Marketplace vs inventory",
+      "% share of inventory (%)",
+      7601,
+      "%"
+    ],
+    [
+      "Average SLAs",
+      "Average SLAs (Days)",
+      448,
+      "Days"
+    ],
+    [
+      "Additional - Users and conversion",
+      "MTU (Mn)",
+      238,
+      "Mn"
+    ],
+    [
+      "Additional - Users and conversion",
+      "Cancellation % (%)",
+      242,
+      "%"
+    ],
+    [
+      "Additional - City/Tier three-way split",
+      "Metro only (%)",
+      476,
+      "%"
+    ],
+    [
+      "Additional - City/Tier three-way split",
+      "Tier 1 (%)",
+      477,
+      "%"
+    ]
+  ]
+}

@@ -1,0 +1,685 @@
+{
+  "player": "Myntra",
+  "display_name": "Myntra",
+  "currency": "INR",
+  "gmv_unit": "INR Cr",
+  "reference": {
+    "model_sheet": "Myntra_AJ",
+    "par_id_col": 1,
+    "name_col": 2,
+    "unit_col": 3,
+    "first_month_col": 4,
+    "header_row": 5,
+    "first_data_row": 6,
+    "last_data_row": 458,
+    "calibration_block": {
+      "rsc_yoy_row": 1,
+      "expert_yoy_row": 2,
+      "expert_number_row": 3,
+      "deviation_row": 4
+    }
+  },
+  "metric_rows": {
+    "gross_gmv": 6,
+    "cancellation_pct": 7,
+    "shipped_gmv": 8,
+    "returns_pct": 9,
+    "rto_pct": 10,
+    "rvp_pct": 11,
+    "net_gmv": 12,
+    "aov": 15,
+    "gross_transactions": 16,
+    "asp": 17,
+    "mtu": 20,
+    "frequency": 21,
+    "basket_size": 22,
+    "cod_pct": 25,
+    "prepaid_pct": 26,
+    "metro_pct": 29,
+    "tier1_pct": 30,
+    "tier2plus_pct": 31,
+    "mau": 299,
+    "mac": 300,
+    "captive_pct": 303,
+    "tpl_pct": 304,
+    "captive_gmv": 305,
+    "tpl_gmv": 306,
+    "aov_dup": 308,
+    "unique_visitors": 310,
+    "mtu_dup": 436,
+    "sessions": 437,
+    "web_share": 438,
+    "app_share": 439,
+    "avg_shipment_value": 440,
+    "registered_users": 441,
+    "app_mau": 442,
+    "app_dau": 443,
+    "web_mau": 444,
+    "web_dau": 445,
+    "app_sessions": 446,
+    "app_sessions_per_day": 447,
+    "app_time_per_session": 448,
+    "web_sessions": 449,
+    "web_sessions_per_day": 450,
+    "web_time_per_session": 451,
+    "txn_app_pct": 452,
+    "txn_new_pct": 453,
+    "paid_pct": 454,
+    "organic_pct": 455,
+    "cac": 456,
+    "m1_retention": 457,
+    "m3_retention": 458,
+    "mtu_mom_helper": 435
+  },
+  "segments": {
+    "fashion": {
+      "gross_gmv": 40,
+      "cancellation": 48,
+      "shipped_gmv": 54,
+      "asp": 62,
+      "items": 70,
+      "aov": 86,
+      "transactions": 93,
+      "users": 101,
+      "frequency": 108,
+      "basket": 115,
+      "cod": 122,
+      "prepaid": 129,
+      "metro": 136,
+      "tier1": 143,
+      "tier2plus": 150,
+      "rto": 157,
+      "rvp": 164,
+      "contrib_share": 356,
+      "gross_contrib": 34
+    },
+    "home_furniture": {
+      "gross_gmv": 41,
+      "cancellation": 49,
+      "shipped_gmv": 55,
+      "asp": 63,
+      "items": 71,
+      "aov": 87,
+      "transactions": 94,
+      "users": 102,
+      "frequency": 109,
+      "basket": 116,
+      "cod": 123,
+      "prepaid": 130,
+      "metro": 137,
+      "tier1": 144,
+      "tier2plus": 151,
+      "rto": 158,
+      "rvp": 165,
+      "contrib_share": 382,
+      "gross_contrib": 35
+    },
+    "bpc": {
+      "gross_gmv": 42,
+      "cancellation": 50,
+      "shipped_gmv": 56,
+      "asp": 64,
+      "items": 72,
+      "aov": 88,
+      "transactions": 95,
+      "users": 103,
+      "frequency": 110,
+      "basket": 117,
+      "cod": 124,
+      "prepaid": 131,
+      "metro": 138,
+      "tier1": 145,
+      "tier2plus": 152,
+      "rto": 159,
+      "rvp": 166,
+      "contrib_share": 390,
+      "gross_contrib": 36
+    }
+  },
+  "l2_categories": {
+    "wom_ethnic": {
+      "label": "Women's ethnicwear",
+      "segment": "fashion",
+      "gmv": 177,
+      "asp": 221,
+      "units": 261,
+      "share": 359,
+      "pct_of_seg": 317
+    },
+    "wom_western": {
+      "label": "Women's westernwear",
+      "segment": "fashion",
+      "gmv": 178,
+      "asp": 222,
+      "units": 262,
+      "share": 360,
+      "pct_of_seg": 318
+    },
+    "wom_inner": {
+      "label": "Women's Innerwear",
+      "segment": "fashion",
+      "gmv": 179,
+      "asp": 223,
+      "units": 263,
+      "share": 361,
+      "pct_of_seg": 319
+    },
+    "wom_sports": {
+      "label": "Women's Sportswear",
+      "segment": "fashion",
+      "gmv": 180,
+      "asp": 224,
+      "units": 264,
+      "share": 362,
+      "pct_of_seg": 320
+    },
+    "men_ethnic": {
+      "label": "Men's ethnicwear",
+      "segment": "fashion",
+      "gmv": 182,
+      "asp": 226,
+      "units": 266,
+      "share": 364,
+      "pct_of_seg": 322
+    },
+    "men_western": {
+      "label": "Men's westernwear",
+      "segment": "fashion",
+      "gmv": 183,
+      "asp": 227,
+      "units": 267,
+      "share": 365,
+      "pct_of_seg": 323
+    },
+    "men_inner": {
+      "label": "Men's Innerwear",
+      "segment": "fashion",
+      "gmv": 184,
+      "asp": 228,
+      "units": 268,
+      "share": 366,
+      "pct_of_seg": 324
+    },
+    "men_sports": {
+      "label": "Men's Sportswear",
+      "segment": "fashion",
+      "gmv": 185,
+      "asp": 229,
+      "units": 269,
+      "share": 367,
+      "pct_of_seg": 325
+    },
+    "kids": {
+      "label": "Kids Fashion",
+      "segment": "fashion",
+      "gmv": 186,
+      "asp": 230,
+      "units": 270,
+      "share": 368,
+      "pct_of_seg": 326
+    },
+    "wom_cf_fw": {
+      "label": "Women Casual+formal FW",
+      "segment": "fashion",
+      "gmv": 189,
+      "asp": 233,
+      "units": 273,
+      "share": 371,
+      "pct_of_seg": 329
+    },
+    "wom_sports_fw": {
+      "label": "Women Sports Footwear",
+      "segment": "fashion",
+      "gmv": 190,
+      "asp": 234,
+      "units": 274,
+      "share": 372,
+      "pct_of_seg": 330
+    },
+    "men_cf_fw": {
+      "label": "Men Casual+formal FW",
+      "segment": "fashion",
+      "gmv": 192,
+      "asp": 236,
+      "units": 276,
+      "share": 374,
+      "pct_of_seg": 332
+    },
+    "men_sports_fw": {
+      "label": "Men Sports Footwear",
+      "segment": "fashion",
+      "gmv": 193,
+      "asp": 237,
+      "units": 277,
+      "share": 375,
+      "pct_of_seg": 333
+    },
+    "jewellery": {
+      "label": "Jewellery",
+      "segment": "fashion",
+      "gmv": 195,
+      "asp": 239,
+      "units": 279,
+      "share": 377,
+      "pct_of_seg": 335
+    },
+    "lta": {
+      "label": "LTA (Women's+Men's)",
+      "segment": "fashion",
+      "gmv": 196,
+      "asp": 240,
+      "units": 280,
+      "share": 378,
+      "pct_of_seg": 336
+    },
+    "watches": {
+      "label": "Watches",
+      "segment": "fashion",
+      "gmv": 197,
+      "asp": 241,
+      "units": 281,
+      "share": 379,
+      "pct_of_seg": 337
+    },
+    "fashion_acc": {
+      "label": "Fashion Accessories",
+      "segment": "fashion",
+      "gmv": 198,
+      "asp": 242,
+      "units": 282,
+      "share": 380,
+      "pct_of_seg": 338
+    },
+    "home_decor": {
+      "label": "Home Decor",
+      "segment": "home_furniture",
+      "gmv": 202,
+      "asp": 246,
+      "units": 286,
+      "share": 384,
+      "pct_of_seg": 344
+    },
+    "home_furnishing": {
+      "label": "Home Furnishing",
+      "segment": "home_furniture",
+      "gmv": 203,
+      "asp": 247,
+      "units": 287,
+      "share": 385,
+      "pct_of_seg": 345
+    },
+    "home_improve": {
+      "label": "Home Improvement",
+      "segment": "home_furniture",
+      "gmv": 204,
+      "asp": 248,
+      "units": 288,
+      "share": 386,
+      "pct_of_seg": 346
+    },
+    "household": {
+      "label": "Household",
+      "segment": "home_furniture",
+      "gmv": 205,
+      "asp": 249,
+      "units": 289,
+      "share": 387,
+      "pct_of_seg": 347
+    },
+    "grooming": {
+      "label": "Grooming",
+      "segment": "bpc",
+      "gmv": 209,
+      "asp": 252,
+      "units": 292,
+      "share": 391,
+      "pct_of_seg": 351
+    },
+    "makeup": {
+      "label": "Makeup and Fragrances",
+      "segment": "bpc",
+      "gmv": 210,
+      "asp": 253,
+      "units": 293,
+      "share": 392,
+      "pct_of_seg": 352
+    }
+  },
+  "l2_rollups": {
+    "_comment": "Nested: Fashion sums Apparel + Footwear + Accessories, and Apparel sums Women + Men + Kids. The engine resolves these in dependency order, not in the order written here.",
+    "174": [
+      "175",
+      "187",
+      "194"
+    ],
+    "175": [
+      "176",
+      "181",
+      "186"
+    ],
+    "176": [
+      "wom_ethnic",
+      "wom_western",
+      "wom_inner",
+      "wom_sports"
+    ],
+    "181": [
+      "men_ethnic",
+      "men_western",
+      "men_inner",
+      "men_sports"
+    ],
+    "187": [
+      "188",
+      "191"
+    ],
+    "188": [
+      "wom_cf_fw",
+      "wom_sports_fw"
+    ],
+    "191": [
+      "men_cf_fw",
+      "men_sports_fw"
+    ],
+    "194": [
+      "jewellery",
+      "lta",
+      "watches",
+      "fashion_acc"
+    ]
+  },
+  "mis_taxonomy_map": {
+    "_comment": "MIS category -> model L2 key(s). 'split' keys are allocated across targets using the historical share of the allocation_month.",
+    "Women's Ethnic": {
+      "targets": [
+        "wom_ethnic"
+      ]
+    },
+    "Women's Western Wear": {
+      "targets": [
+        "wom_western"
+      ]
+    },
+    "Lingerie and Loungewear": {
+      "targets": [
+        "wom_inner"
+      ]
+    },
+    "Women's Sports Apparel": {
+      "targets": [
+        "wom_sports"
+      ]
+    },
+    "Men's Occasion Wear": {
+      "targets": [
+        "men_ethnic"
+      ]
+    },
+    "Men's Casual Wear": {
+      "targets": [
+        "men_western"
+      ]
+    },
+    "Men's Essentials": {
+      "targets": [
+        "men_inner"
+      ]
+    },
+    "Men's Sports Apparel": {
+      "targets": [
+        "men_sports"
+      ]
+    },
+    "Kids Wear": {
+      "targets": [
+        "kids"
+      ]
+    },
+    "Women's Footwear": {
+      "targets": [
+        "wom_cf_fw"
+      ]
+    },
+    "Men's Casual Footwear": {
+      "targets": [
+        "men_cf_fw"
+      ]
+    },
+    "Sports Footwear": {
+      "targets": [
+        "wom_sports_fw",
+        "men_sports_fw"
+      ],
+      "split": "historical"
+    },
+    "Jewellery": {
+      "targets": [
+        "jewellery"
+      ]
+    },
+    "Men's LTA": {
+      "targets": [
+        "lta"
+      ],
+      "merge": true
+    },
+    "Women's LTA": {
+      "targets": [
+        "lta"
+      ],
+      "merge": true
+    },
+    "Personal Care": {
+      "targets": [
+        "grooming",
+        "makeup"
+      ],
+      "split": "historical"
+    },
+    "Home Furnishing": {
+      "targets": [
+        "home_decor",
+        "home_furnishing",
+        "home_improve",
+        "household"
+      ],
+      "split": "historical"
+    }
+  },
+  "call_category_aliases": {
+    "_comment": "The expert call uses the MIS taxonomy with slightly different wording. Normalised to MIS category names so call YoY can be set against MIS actuals.",
+    "Women's Ethnic Wear": "Women's Ethnic",
+    "Kids' Fashion": "Kids Wear",
+    "Home & Home Furnishing": "Home Furnishing",
+    "Men's occasion wear": "Men's Occasion Wear",
+    "Women's Sports Apparel": "Women's Sports Apparel",
+    "Women's Western Wear": "Women's Western Wear",
+    "Personal Care": "Personal Care",
+    "Women's Footwear": "Women's Footwear",
+    "Men's Sports Apparel": "Men's Sports Apparel",
+    "Men's Casual Wear": "Men's Casual Wear",
+    "Men's Occasion Wear": "Men's Occasion Wear",
+    "Jewellery": "Jewellery",
+    "Men's Casual Footwear": "Men's Casual Footwear",
+    "Sports Footwear": "Sports Footwear",
+    "LTA": "LTA"
+  },
+  "mis_sections": {
+    "overall": "Overall",
+    "category_gmv": "Category GMV",
+    "category_asp": "Category ASP",
+    "payment": "Payment Split",
+    "geography": "Geographic Split"
+  },
+  "mis_metric_names": {
+    "gross_gmv": "Gross GMV at SP",
+    "returns": "Returns",
+    "aov": "AOV at SP",
+    "shipped_gmv": "Shipped GMV",
+    "mtu": "Monthly Transacting Users",
+    "orders": "Monthly Orders",
+    "cod": "COD (%)",
+    "prepaid": "Prepaid (%)",
+    "metro": "Metro",
+    "tier1": "Tier 1",
+    "tier2plus": "Tier 2+"
+  },
+  "corroboration": [
+    {
+      "_comment": "Rebuild a category from figures the expert stated independently of the MIS, then compare. Uses no MIS input, so agreement tests the MIS rather than repeating it.",
+      "name": "BPC from the expert's stated base and YoY",
+      "method": "base_times_yoy",
+      "base_label": "Personal care base",
+      "base_key": "personal_care_sep25",
+      "yoy_category": "Personal Care",
+      "mis_category": "Personal Care"
+    },
+    {
+      "name": "Men's casual wear from the price-point build-up",
+      "method": "parts_over_share",
+      "part_labels": [
+        "Men's entry (₹0–500)",
+        "Men's mass (₹501–1,000)"
+      ],
+      "share_label": "Men's entry + mass share",
+      "mis_category": "Men's Casual Wear"
+    }
+  ],
+  "output_layout": {
+    "_comment": "Order of the exported upload sheet. Sections are matched against parent_question in order; the first match wins. Template order is preserved inside each section. Parameters with no value are moved to the end.",
+    "nulls_last": true,
+    "sections": [
+      {
+        "name": "Platform topline",
+        "match": [
+          "^GMV$",
+          "^AOV$",
+          "^Topline$",
+          "^Other Topline Metrics$"
+        ]
+      },
+      {
+        "name": "Category shipped GMV",
+        "match": [
+          "^Category Shipped GMV"
+        ]
+      },
+      {
+        "name": "Category ASP",
+        "match": [
+          "^Category\\s+ASP"
+        ]
+      },
+      {
+        "name": "Category contribution",
+        "match": [
+          "^Category Shipped % GMV"
+        ]
+      },
+      {
+        "name": "Other calculated metrics",
+        "match": [
+          ".*"
+        ]
+      }
+    ]
+  },
+  "residual_l2": {
+    "_comment": "Decision Q1A: the MIS 17 categories are the full platform. These model L2s have no MIS line, so they are carved OUT of the MIS total at their historical share and the MIS categories scale down proportionally. Platform total is preserved.",
+    "keys": [
+      "watches",
+      "fashion_acc"
+    ],
+    "policy": "carve_from_total"
+  },
+  "source_policy": {
+    "_comment": "Decision Q2A / Q4A. mis_anchor = reported actual, never moved by weights. mis_record_only = captured for the audit trail but NOT used numerically because the unit definition conflicts with the model.",
+    "shipped_gmv": "mis_anchor",
+    "category_gmv": "mis_anchor",
+    "category_asp": "mis_anchor",
+    "returns_pct": "mis_anchor",
+    "geo_split": "mis_anchor",
+    "aov": "mis_record_only",
+    "orders": "mis_record_only",
+    "mtu": "mis_record_only",
+    "gross_gmv": "derived",
+    "cancellation_pct": "estimated",
+    "basket_size": "estimated",
+    "mau": "estimated",
+    "mac": "estimated"
+  },
+  "mis_definition_conflicts": {
+    "_comment": "Known unit-definition mismatches between the MIS and the model. Surfaced on every run; never silently applied.",
+    "AOV at SP": {
+      "model_metric": "aov",
+      "note": "MIS AOV is consistent with MIS orders (orders x AOV = MIS shipped GMV) but sits ~47% below the model's order-level AOV. Reads as a shipment-level or item-weighted unit, not an order."
+    },
+    "Monthly Orders": {
+      "model_metric": "gross_transactions",
+      "note": "MIS orders exceed model gross transactions by ~50%. Same unit-definition issue as AOV."
+    },
+    "Monthly Transacting Users": {
+      "model_metric": "mtu",
+      "note": "MIS MTU of 80M exceeds even model MAU (~67M) and is ~5x model MTU. Reads as a registered-or-reached base, not transacting users."
+    }
+  },
+  "plausibility_bounds": {
+    "_comment": "Month-on-month moves beyond these raise a contradiction flag. They never silently clamp a value.",
+    "cancellation_pct": {
+      "max_abs_mom_delta": 0.04
+    },
+    "returns_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "metro_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "tier1_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "tier2plus_pct": {
+      "max_abs_mom_delta": 0.05
+    },
+    "basket_size": {
+      "max_abs_mom_delta": 0.3
+    },
+    "shipped_gmv": {
+      "max_abs_mom_pct": 0.6
+    }
+  },
+  "identities": {
+    "_comment": "Checked after every run. Tolerance is relative unless the metric is a share.",
+    "gross_from_shipped": {
+      "expr": "gross_gmv * (1 - cancellation_pct) == shipped_gmv",
+      "tol": 1e-06
+    },
+    "net_from_shipped": {
+      "expr": "net_gmv == shipped_gmv * (1 - returns_pct)",
+      "tol": 1e-06
+    },
+    "returns_split": {
+      "expr": "returns_pct == rto_pct + rvp_pct",
+      "tol": 1e-09
+    },
+    "segment_total": {
+      "expr": "sum(segment.shipped_gmv) == shipped_gmv",
+      "tol": 1e-06
+    },
+    "l2_total": {
+      "expr": "sum(l2.gmv) == shipped_gmv",
+      "tol": 1e-06
+    },
+    "payment_split": {
+      "expr": "cod_pct + prepaid_pct == 1",
+      "tol": 1e-09
+    },
+    "geo_split": {
+      "expr": "metro_pct + tier1_pct + tier2plus_pct == 1",
+      "tol": 1e-09
+    },
+    "contrib_shares": {
+      "expr": "sum(l2.share) == 1",
+      "tol": 1e-06
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "_comment": "The BPC players this system covers. 'sheet' is the tab in the reference workbook that holds the player's history (spelled exactly, trailing spaces included). Add a line here to add a player.",
+  "players": [
+    {
+      "name": "Nykaa",
+      "sheet": "Nykaa",
+      "aliases": [
+        "nykaa",
+        "nykaa beauty"
+      ]
+    },
+    {
+      "name": "Purplle",
+      "sheet": "Purplle  ",
+      "aliases": [
+        "purplle",
+        "purple"
+      ]
+    },
+    {
+      "name": "Mamaearth",
+      "sheet": "MamaEarth",
+      "aliases": [
+        "mamaearth",
+        "mama earth"
+      ]
+    },
+    {
+      "name": "Sugar",
+      "sheet": "Sugar",
+      "aliases": [
+        "sugar",
+        "sugar cosmetics"
+      ]
+    },
+    {
+      "name": "Mcaffeine",
+      "sheet": "Mcaffeine",
+      "aliases": [
+        "mcaffeine",
+        "mcaffiene",
+        "m caffeine"
+      ]
+    },
+    {
+      "name": "Beardo",
+      "sheet": "Beardo",
+      "aliases": [
+        "beardo"
+      ]
+    },
+    {
+      "name": "Plum",
+      "sheet": "Plum",
+      "aliases": [
+        "plum",
+        "plum goodness"
+      ]
+    },
+    {
+      "name": "Sephora",
+      "sheet": "Sephora",
+      "aliases": [
+        "sephora"
+      ]
+    },
+    {
+      "name": "WOW",
+      "sheet": "WOW",
+      "aliases": [
+        "wow",
+        "wow skin science"
+      ]
+    },
+    {
+      "name": "MAC",
+      "sheet": "MAC",
+      "aliases": [
+        "mac",
+        "mac cosmetics"
+      ]
+    },
+    {
+      "name": "MyGlamm",
+      "sheet": "MyGlamm",
+      "aliases": [
+        "myglamm",
+        "my glamm"
+      ]
+    }
+  ],
+  "templates": [],
+  "batch_default": [
+    "Nykaa",
+    "Purplle",
+    "Mamaearth",
+    "Sugar",
+    "Mcaffeine",
+    "Beardo",
+    "Plum",
+    "Sephora",
+    "WOW",
+    "MAC",
+    "MyGlamm"
+  ]
+}

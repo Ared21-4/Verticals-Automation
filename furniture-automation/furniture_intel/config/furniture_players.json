@@ -1,0 +1,30 @@
+{
+  "_comment": "The furniture players this system covers. 'sheet' is the tab in the reference workbook that holds the player's history. 'start_month' is the first month read: both sheets interleave Urban Ladder and Pepperfry in alternate columns up to Apr'20, so history starts at the first contiguous month, and Apr'21 onward avoids the Covid months. Add a line here to add a player.",
+  "players": [
+    {
+      "name": "Pepperfry",
+      "sheet": "Pepperfry Automated",
+      "start_month": "2021-04",
+      "aliases": [
+        "pepperfry",
+        "pepper fry",
+        "pf"
+      ]
+    },
+    {
+      "name": "Urban Ladder",
+      "sheet": "Urbanladder Automated",
+      "start_month": "2021-04",
+      "aliases": [
+        "urban ladder",
+        "urbanladder",
+        "ul"
+      ]
+    }
+  ],
+  "templates": [],
+  "batch_default": [
+    "Pepperfry",
+    "Urban Ladder"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "_comment": "Row labels that BPC sheets leave without a par_id, and the par_id each stands for. Only the first row with the label is bound, and only when no row already carries that par_id.",
+  "Shipped GMV": 243,
+  "Returned GMV": 244,
+  "Net/ Fulfilled GMV": 247,
+  "Gross Transactions": 4257,
+  "Basketsize": 519,
+  "Category - ASP of the categories": 468,
+  "Personal Care": 249,
+  "Makeup & Fragrance": 250,
+  "Others": 4571
+}
